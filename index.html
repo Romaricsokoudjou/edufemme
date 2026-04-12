@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EDUFEMME D'AFRIQ — Formation LIVE sur Zoom : Importation Chine-Afrique, Vente en ligne, Création de site Web par IA. 4960 FCFA seulement.">
+<title>EDUFEMME D'AFRIQ — Transforme ton Téléphone en Machine à Revenus</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#E65100;--orange-light:#FF7043;--orange-pale:#FBE9E7;--orange-dim:rgba(230,81,0,0.1);
+  --green:#00C853;--green-dark:#00A040;--green-dim:rgba(0,200,83,0.12);
+  --blue:#0D47A1;--blue-light:#1565C0;--blue-pale:#E3F2FD;--blue-dim:rgba(13,71,161,0.12);
+  --white:#FFFFFF;--off-white:#F8F9FA;--light-gray:#F1F3F5;--text:#1A1A2E;--text-muted:#5C6370;
+  --border:rgba(13,71,161,0.12);
+  --shadow-orange:0 12px 40px rgba(230,81,0,0.3);--shadow-blue:0 12px 40px rgba(13,71,161,0.2);--shadow-green:0 12px 40px rgba(0,200,83,0.3);
+  --font-head:'Montserrat',sans-serif;--font-body:'Poppins',sans-serif;
+  --ease:cubic-bezier(0.25,0.46,0.45,0.94);
+  --pay-link:https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--text);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:var(--font-body);cursor:pointer;border:none}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--light-gray)}::-webkit-scrollbar-thumb{background:var(--orange)}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(1);box-shadow:var(--shadow-orange)}50%{transform:scale(1.04);box-shadow:0 16px 50px rgba(230,81,0,0.5)}}
+@keyframes pulseGreen{0%,100%{transform:scale(1);box-shadow:var(--shadow-green)}50%{transform:scale(1.04);box-shadow:0 16px 50px rgba(0,200,83,0.5)}}
+@keyframes glow{0%,100%{box-shadow:0 0 10px rgba(230,81,0,0.4),0 0 20px rgba(230,81,0,0.2)}50%{box-shadow:0 0 20px rgba(230,81,0,0.7),0 0 40px rgba(230,81,0,0.4),0 0 60px rgba(230,81,0,0.2)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.4}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes waPulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)}50%{box-shadow:0 4px 32px rgba(37,211,102,.7),0 0 0 10px rgba(37,211,102,.08)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes slideDown{from{transform:translateY(-100%);opacity:0}to{transform:none;opacity:1}}
+@keyframes slideUp{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+@keyframes notifSlide{0%{transform:translateX(120%);opacity:0}10%{transform:translateX(0);opacity:1}80%{transform:translateX(0);opacity:1}100%{transform:translateX(120%);opacity:0}}
+@keyframes progressFill{from{width:0%}to{width:var(--prog-w)}}
+@keyframes countDown{0%{transform:scale(1)}50%{transform:scale(1.1);color:var(--orange)}100%{transform:scale(1)}}
+@keyframes shimmer{0%{background-position:-200% center}100%{background-position:200% center}}
+@keyframes loaderFadeOut{0%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
+@keyframes loaderPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+@keyframes particles{0%{transform:translateY(0) rotate(0deg);opacity:1}100%{transform:translateY(-100px) rotate(360deg);opacity:0}}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.vis{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}.reveal.d4{transition-delay:.4s}
+
+/* ===== LOADER ===== */
+.loader{position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,var(--blue) 0%,#1A237E 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity .5s,visibility .5s}
+.loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-logo{font-family:var(--font-head);font-size:1.6rem;font-weight:900;color:var(--white);text-align:center;animation:loaderPulse 1.5s ease infinite}
+.loader-logo span{color:var(--orange-light)}
+.loader-spinner{width:56px;height:56px;border:4px solid rgba(255,255,255,0.2);border-top-color:var(--orange-light);border-radius:50%;animation:spin .8s linear infinite}
+.loader-bar{width:200px;height:4px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden}
+.loader-bar-fill{height:100%;background:linear-gradient(90deg,var(--orange),var(--orange-light));border-radius:2px;animation:progressFill 2.5s ease forwards;--prog-w:100%}
+.loader-text{color:rgba(255,255,255,0.7);font-size:13px;font-weight:500;letter-spacing:.1em}
+
+/* ===== LIVE NOTIFICATIONS ===== */
+.live-notif{position:fixed;bottom:100px;right:24px;z-index:850;max-width:280px;background:var(--white);border-radius:14px;padding:14px 16px;box-shadow:0 8px 32px rgba(0,0,0,0.18);display:flex;align-items:center;gap:12px;animation:notifSlide 5s ease forwards;pointer-events:none}
+.live-notif-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--orange),#FF6D00);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.live-notif-text{font-size:12px;color:var(--text);line-height:1.4}
+.live-notif-text strong{font-weight:700;color:var(--text)}
+.live-notif-text span{color:var(--text-muted)}
+.live-notif-dot{position:absolute;top:10px;right:12px;width:8px;height:8px;background:var(--green);border-radius:50%;animation:blink 1.5s ease infinite}
+
+/* ===== LABELS & BASICS ===== */
+.label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;font-family:var(--font-body)}
+.lo{color:var(--orange)}.lb{color:var(--blue)}
+
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--font-body);font-weight:700;font-size:15px;letter-spacing:.02em;padding:15px 32px;border-radius:8px;transition:all .3s var(--ease);position:relative;overflow:hidden;cursor:pointer;border:none}
+.btn:active{transform:scale(.97)}
+.btn-o{background:linear-gradient(135deg,var(--orange) 0%,#FF5722 100%);color:var(--white);box-shadow:var(--shadow-orange)}
+.btn-o:hover{background:linear-gradient(135deg,var(--orange-light) 0%,var(--orange) 100%);transform:translateY(-2px);box-shadow:0 16px 48px rgba(230,81,0,0.4)}
+.btn-g{background:linear-gradient(135deg,var(--green) 0%,#00E676 100%);color:var(--white);box-shadow:var(--shadow-green)}
+.btn-g:hover{background:linear-gradient(135deg,#00E676 0%,var(--green) 100%);transform:translateY(-2px);box-shadow:0 16px 48px rgba(0,200,83,0.45)}
+.btn-b{background:var(--blue);color:var(--white);box-shadow:var(--shadow-blue)}
+.btn-b:hover{background:var(--blue-light);transform:translateY(-2px)}
+.btn-ob{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+.btn-ob:hover{background:var(--blue-dim)}
+.btn-lg{padding:18px 40px;font-size:17px;border-radius:10px}
+.btn-xl{padding:20px 48px;font-size:18px;border-radius:12px}
+.btn-full{width:100%}
+.btn-pulse-o{animation:pulse 2.5s ease infinite}
+.btn-pulse-g{animation:pulseGreen 2.5s ease infinite}
+.btn-glow{animation:glow 2s ease infinite}
+
+/* CTA Shimmer effect */
+.btn-shimmer{background:linear-gradient(135deg,var(--orange),#FF5722,var(--orange-light),var(--orange));background-size:300% 100%;animation:shimmer 2s linear infinite,pulse 3s ease infinite;color:var(--white);box-shadow:var(--shadow-orange)}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,4vw,56px);background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 4px 24px rgba(13,71,161,0.1)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-text{font-family:var(--font-head);font-size:13px;font-weight:800;line-height:1.2}
+.nav-logo-text .top{color:var(--orange)}.nav-logo-text .bot{color:var(--blue)}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-link{font-size:13px;font-weight:600;color:var(--text-muted);padding:8px 14px;border-radius:6px;transition:color .2s,background .2s}
+.nav-link:hover{color:var(--blue);background:var(--blue-pale)}
+.nav-cta{padding:10px 22px;font-size:13px;border-radius:8px}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:var(--text);transition:.3s}
+.mob-menu{display:none;position:fixed;top:68px;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);z-index:850;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.mob-menu.open{opacity:1;visibility:visible;display:flex}
+.mob-menu a{font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--text);transition:color .2s}
+.mob-menu a:hover{color:var(--orange)}
+
+/* ===== HERO ===== */
+.hero{min-height:100vh;padding:100px clamp(16px,5vw,80px) 80px;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--white)}
+.hero::before{content:'';position:absolute;top:0;right:0;bottom:0;width:50%;background:linear-gradient(135deg,var(--blue-pale) 0%,#DCEEFB 100%);clip-path:polygon(15% 0,100% 0,100% 100%,0% 100%);z-index:0}
+.hero::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(13,71,161,0.06) 1px,transparent 1px);background-size:32px 32px;z-index:0;pointer-events:none}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--orange-dim);border:1px solid rgba(230,81,0,0.25);border-radius:40px;padding:6px 16px;margin-bottom:24px;animation:fadeUp .8s var(--ease) both}
+.hero-badge-dot{width:8px;height:8px;background:var(--orange);border-radius:50%;animation:blink 1.4s ease infinite}
+.hero-badge span{font-size:11px;font-weight:700;color:var(--orange);letter-spacing:.1em;text-transform:uppercase}
+.hero h1{font-family:var(--font-head);font-size:clamp(2rem,4vw,3.2rem);font-weight:900;line-height:1.1;color:var(--text);margin-bottom:20px;animation:fadeUp .9s var(--ease) .1s both}
+.hero h1 .ao{color:var(--orange)}.hero h1 .ab{color:var(--blue)}
+.hero-sub{font-size:clamp(.95rem,1.5vw,1.1rem);color:var(--text-muted);line-height:1.8;margin-bottom:24px;max-width:500px;animation:fadeUp .9s var(--ease) .2s both}
+/* Live info badge */
+.hero-live-badge{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--blue-pale),var(--off-white));border:1.5px solid var(--blue);border-radius:10px;padding:10px 16px;margin-bottom:20px;animation:fadeUp .9s var(--ease) .25s both}
+.hero-live-badge .live-dot{width:10px;height:10px;background:#FF1744;border-radius:50%;animation:blink 1s ease infinite;flex-shrink:0}
+.hero-live-badge span{font-size:12px;font-weight:700;color:var(--blue)}
+
+.hero-offer-box{display:flex;align-items:center;gap:16px;background:var(--white);border:2px solid var(--orange);border-radius:12px;padding:16px 20px;margin-bottom:28px;max-width:420px;animation:fadeUp .9s var(--ease) .3s both;box-shadow:0 4px 20px rgba(230,81,0,0.12)}
+.hero-price{font-family:var(--font-head);font-size:2.2rem;font-weight:900;color:var(--orange);white-space:nowrap}
+.hero-price-details{flex:1}
+.hero-price-old{font-size:13px;color:var(--text-muted);text-decoration:line-through;display:block;font-weight:600}
+.hero-price-desc{font-size:13px;font-weight:600;color:var(--text)}
+.hero-badge2{background:var(--orange);color:var(--white);font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;animation:fadeUp .9s var(--ease) .4s both}
+.hero-trust{display:flex;align-items:center;gap:20px;margin-top:28px;flex-wrap:wrap;animation:fadeUp .9s var(--ease) .5s both}
+.hero-trust-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text-muted);font-weight:500}
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center;animation:fadeIn 1.2s var(--ease) .3s both}
+.hero-visual-main{width:100%;max-width:440px;aspect-ratio:1;border-radius:24px;background:linear-gradient(135deg,var(--orange) 0%,#FF8A50 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:var(--shadow-orange);animation:float 4s ease infinite}
+.hero-visual-main::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 70%,rgba(255,255,255,0.15) 0%,transparent 60%)}
+.hero-visual-img{width:100%;height:100%;object-fit:cover;border-radius:24px}
+.hero-visual-emoji{font-size:clamp(80px,15vw,120px);position:relative;z-index:1;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.2))}
+.hero-pill{position:absolute;background:var(--white);border-radius:40px;padding:8px 16px;box-shadow:0 8px 24px rgba(0,0,0,0.12);display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--text);white-space:nowrap}
+.hero-pill-1{top:8%;left:-12%;animation:float 3.5s ease infinite}
+.hero-pill-2{bottom:12%;right:-10%;animation:float 4.5s ease .5s infinite}
+.hero-pill-3{top:50%;right:-14%;animation:float 3s ease 1s infinite}
+.hero-pill-ico{font-size:18px}
+
+/* ===== URGENCY BANNER ===== */
+.urgency-banner{background:linear-gradient(90deg,var(--orange) 0%,#FF3D00 100%);color:var(--white);padding:14px clamp(16px,5vw,80px);display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;position:relative;overflow:hidden}
+.urgency-banner::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,0.03),rgba(255,255,255,0.03) 2px,transparent 2px,transparent 12px)}
+.urgency-text{font-size:14px;font-weight:700}
+.urgency-timer{display:flex;align-items:center;gap:4px}
+.timer-block{background:rgba(0,0,0,0.25);border-radius:6px;padding:4px 10px;font-family:var(--font-head);font-weight:900;font-size:20px;min-width:46px;text-align:center;letter-spacing:.05em}
+.timer-sep{font-size:20px;font-weight:900;opacity:.7;animation:blink 1s ease infinite}
+.urgency-btn{background:var(--white);color:var(--orange);padding:10px 22px;border-radius:8px;font-size:13px;font-weight:800;transition:all .2s;cursor:pointer;border:none;animation:pulse 2.5s ease infinite}
+.urgency-btn:hover{background:var(--orange-pale);transform:translateY(-1px)}
+
+/* ===== SECTIONS ===== */
+.section{padding:clamp(60px,10vw,100px) clamp(16px,5vw,80px)}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-head{text-align:center;margin-bottom:clamp(40px,6vw,64px)}
+.section-head h2{font-family:var(--font-head);font-size:clamp(1.7rem,4vw,2.8rem);font-weight:900;line-height:1.15;color:var(--text);margin:12px 0 16px}
+.section-head h2 em{font-style:italic;color:var(--orange)}.section-head h2 strong{color:var(--blue);font-style:normal}
+.section-head p{font-size:1rem;color:var(--text-muted);max-width:560px;margin:0 auto;line-height:1.8}
+.divider-line{width:60px;height:4px;border-radius:2px;margin:16px auto 0}
+.div-o{background:var(--orange)}.div-b{background:var(--blue)}
+
+/* ===== CTA SECTION AFTER EACH BLOCK ===== */
+.section-cta{text-align:center;margin-top:40px}
+.section-cta-box{display:inline-flex;flex-direction:column;align-items:center;gap:12px;background:linear-gradient(135deg,var(--orange-dim),var(--green-dim));border:1.5px solid rgba(230,81,0,0.2);border-radius:16px;padding:28px 40px}
+.section-cta-box p{font-size:14px;color:var(--text-muted);margin-top:8px}
+
+/* ===== PRIX HERO ===== */
+.prix-hero{background:linear-gradient(135deg,#1A1A2E 0%,#0D47A1 100%);padding:48px clamp(16px,5vw,80px);text-align:center;position:relative;overflow:hidden}
+.prix-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,0.02),rgba(255,255,255,0.02) 1px,transparent 1px,transparent 16px)}
+.prix-inner{max-width:700px;margin:0 auto;position:relative;z-index:1}
+.prix-promo-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,200,0,0.4);border-radius:40px;padding:6px 18px;margin-bottom:20px;color:#FFD600;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.prix-old{font-family:var(--font-head);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;color:rgba(255,255,255,0.5);text-decoration:line-through;display:block;margin-bottom:4px}
+.prix-new{font-family:var(--font-head);font-size:clamp(3rem,7vw,5rem);font-weight:900;color:var(--white);display:block;line-height:1}
+.prix-fcfa{font-size:1.5rem;font-weight:700;color:var(--orange-light)}
+.prix-usd{font-size:1.1rem;color:rgba(255,255,255,0.7);margin-top:4px;display:block}
+.prix-cta-btn{margin-top:24px;background:linear-gradient(135deg,var(--green),#00E676);color:var(--white);font-size:18px;font-weight:900;padding:20px 52px;border-radius:12px;border:none;cursor:pointer;box-shadow:var(--shadow-green);animation:pulseGreen 2.5s ease infinite;letter-spacing:.02em;transition:all .3s}
+.prix-cta-btn:hover{transform:translateY(-3px);box-shadow:0 20px 60px rgba(0,200,83,0.5)}
+
+/* ===== PLACES COMPTEUR ===== */
+.places-section{background:linear-gradient(135deg,var(--orange-pale),#FFF3E0);padding:clamp(40px,8vw,72px) clamp(16px,5vw,80px)}
+.places-inner{max-width:700px;margin:0 auto;text-align:center}
+.places-title{font-family:var(--font-head);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:var(--text);margin-bottom:8px}
+.places-subtitle{font-size:14px;color:var(--text-muted);margin-bottom:28px}
+.places-counter-wrap{background:var(--white);border:2px solid var(--orange);border-radius:20px;padding:28px 32px;box-shadow:var(--shadow-orange);margin-bottom:20px}
+.places-counter-row{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:16px}
+.places-counter-num{font-family:var(--font-head);font-size:clamp(3rem,8vw,5rem);font-weight:900;color:var(--orange);line-height:1;transition:color .3s;animation:countDown .5s ease}
+.places-counter-label{font-size:14px;color:var(--text-muted);font-weight:600;text-align:left}
+.places-counter-label strong{display:block;font-size:18px;color:var(--text)}
+.places-progress{width:100%;height:18px;background:var(--light-gray);border-radius:9px;overflow:hidden;margin-bottom:10px}
+.places-progress-fill{height:100%;background:linear-gradient(90deg,var(--green),#00E676);border-radius:9px;transition:width 1s ease}
+.places-progress-text{display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);font-weight:600}
+.places-cta{margin-top:20px}
+
+/* ===== PROGRAMME ===== */
+.programme{background:var(--off-white)}
+.modules-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.module-card{background:var(--white);border-radius:16px;padding:36px 28px;border:1px solid var(--border);position:relative;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s}
+.module-card:hover{transform:translateY(-6px)}
+.mc1:hover{box-shadow:0 16px 48px rgba(230,81,0,0.16)}.mc2:hover{box-shadow:0 16px 48px rgba(13,71,161,0.16)}.mc3:hover{box-shadow:0 16px 48px rgba(0,200,83,0.16)}
+.module-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.mc1::before{background:var(--orange)}.mc2::before{background:var(--blue)}.mc3::before{background:linear-gradient(90deg,var(--orange),var(--blue))}
+.module-number{font-family:var(--font-head);font-size:3.5rem;font-weight:900;line-height:1;margin-bottom:8px;opacity:.08;position:absolute;top:20px;right:24px;color:var(--text)}
+.module-icon{width:60px;height:60px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:20px}
+.mc1 .module-icon{background:var(--orange-dim)}.mc2 .module-icon{background:var(--blue-dim)}.mc3 .module-icon{background:var(--green-dim)}
+.module-tag{font-size:10px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin-bottom:10px;display:block}
+.mc1 .module-tag{color:var(--orange)}.mc2 .module-tag{color:var(--blue)}.mc3 .module-tag{color:var(--green-dark)}
+.module-card h3{font-family:var(--font-head);font-size:1.2rem;font-weight:800;color:var(--text);margin-bottom:12px;line-height:1.3}
+.module-card p{font-size:.9rem;color:var(--text-muted);line-height:1.75;margin-bottom:20px}
+.module-items{display:flex;flex-direction:column;gap:8px}
+.module-item{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:var(--text-muted);line-height:1.5}
+.module-item-dot{width:18px;height:18px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--white);font-weight:700;margin-top:1px}
+.mc1 .module-item-dot{background:var(--orange)}.mc2 .module-item-dot{background:var(--blue)}.mc3 .module-item-dot{background:var(--green-dark)}
+
+/* ===== HORAIRES PAR PAYS ===== */
+.horaires{background:linear-gradient(135deg,#1A237E 0%,#0D47A1 100%);color:var(--white);padding:clamp(60px,10vw,100px) clamp(16px,5vw,80px)}
+.horaires .section-head h2{color:var(--white)}.horaires .section-head p{color:rgba(255,255,255,.75)}
+.horaires-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.horaire-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:24px 20px;text-align:center;transition:all .3s;position:relative;overflow:hidden}
+.horaire-card:hover{background:rgba(255,255,255,0.13);transform:translateY(-4px);border-color:var(--orange-light)}
+.horaire-flag{font-size:2.8rem;margin-bottom:10px;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.2))}
+.horaire-pays{font-family:var(--font-head);font-size:.9rem;font-weight:700;color:var(--white);margin-bottom:6px}
+.horaire-heure{font-size:1.2rem;font-weight:800;color:var(--orange-light);font-family:var(--font-head)}
+.horaire-zoom{font-size:11px;color:rgba(255,255,255,.5);margin-top:4px}
+.horaires-live-banner{display:flex;align-items:center;justify-content:center;gap:12px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:14px 20px;margin-bottom:32px;flex-wrap:wrap}
+.horaires-live-dot{width:12px;height:12px;background:#FF1744;border-radius:50%;animation:blink 1s ease infinite;flex-shrink:0}
+.horaires-live-text{font-size:14px;font-weight:700;color:var(--white)}
+.zoom-logo{background:rgba(255,255,255,0.15);border-radius:8px;padding:4px 12px;font-size:13px;font-weight:800;color:var(--white)}
+
+/* ===== DATES SECTION ===== */
+.dates-section{background:var(--off-white);padding:clamp(40px,7vw,80px) clamp(16px,5vw,80px)}
+.dates-inner{max-width:800px;margin:0 auto;text-align:center}
+.next-session-box{background:var(--white);border:2.5px solid var(--green);border-radius:20px;padding:32px;box-shadow:0 8px 40px rgba(0,200,83,0.15);margin-bottom:24px}
+.next-session-label{font-size:12px;font-weight:700;color:var(--green-dark);letter-spacing:.15em;text-transform:uppercase;margin-bottom:8px}
+.next-session-date{font-family:var(--font-head);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--text);margin-bottom:4px}
+.next-session-desc{font-size:14px;color:var(--text-muted)}
+.session-detail{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;font-size:14px;font-weight:600;color:var(--blue)}
+
+/* ===== OFFRE CONFIANCE ===== */
+.confiance{background:var(--white)}
+.confiance-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.offer-block{background:linear-gradient(135deg,var(--orange) 0%,#FF3D00 100%);border-radius:24px;padding:clamp(36px,5vw,56px);color:var(--white);position:relative;overflow:hidden}
+.offer-block::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.08)}
+.offer-block::after{content:'';position:absolute;bottom:-60px;left:-20px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,0.06)}
+.offer-block-content{position:relative;z-index:1}
+.offer-eyebrow{font-size:11px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;opacity:.8;margin-bottom:12px;display:block}
+.offer-promo-banner{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:8px;padding:8px 16px;margin-bottom:16px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700}
+.offer-price-row{display:flex;flex-direction:column;gap:4px;margin-bottom:20px}
+.offer-price-crossed{font-size:1.5rem;font-weight:700;text-decoration:line-through;opacity:.5}
+.offer-price-crossed small{font-size:1rem}
+.offer-price-new{font-family:var(--font-head);font-size:clamp(3.5rem,8vw,5.5rem);font-weight:900;line-height:1;color:var(--white)}
+.offer-price-new small{font-size:1.5rem;font-weight:600;opacity:.8}
+.offer-price-usd{font-size:1.1rem;opacity:.8;margin-top:4px}
+.offer-savings{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.2);border-radius:6px;padding:6px 14px;font-size:13px;font-weight:700;margin-bottom:20px}
+.offer-details{display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
+.offer-detail{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:500}
+.offer-detail-ico{width:36px;height:36px;background:rgba(255,255,255,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.offer-btn-green{width:100%;padding:20px;background:linear-gradient(135deg,var(--green),#00E676);color:var(--white);border:none;border-radius:12px;font-family:var(--font-body);font-size:17px;font-weight:900;cursor:pointer;transition:all .25s;letter-spacing:.02em;animation:pulseGreen 2.5s ease infinite;box-shadow:var(--shadow-green)}
+.offer-btn-green:hover{background:linear-gradient(135deg,#00E676,var(--green));transform:translateY(-2px);box-shadow:0 16px 48px rgba(0,200,83,0.5)}
+.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.trust-card{background:var(--off-white);border:1px solid var(--border);border-radius:14px;padding:24px 20px;text-align:center;transition:transform .3s,box-shadow .3s}
+.trust-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-blue)}
+.trust-card-ico{font-size:32px;margin-bottom:10px}
+.trust-card-val{font-family:var(--font-head);font-size:2rem;font-weight:900;color:var(--blue);display:block;margin-bottom:4px}
+.trust-card-lbl{font-size:12px;color:var(--text-muted);font-weight:500;line-height:1.4}
+.trust-card.featured{border-color:var(--orange);background:var(--orange-dim);grid-column:span 2;padding:20px;display:flex;align-items:center;gap:16px;text-align:left}
+.trust-card.featured .trust-card-ico{font-size:36px;margin:0}
+.trust-card.featured .trust-card-val{font-size:1.8rem;color:var(--orange);margin:0}
+
+/* ===== POUR QUI ===== */
+.pourqui{background:var(--blue);color:var(--white)}
+.pourqui .section-head h2{color:var(--white)}.pourqui .section-head p{color:rgba(255,255,255,.75)}
+.pourqui-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pourqui-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:28px 22px;transition:background .3s,transform .3s}
+.pourqui-card:hover{background:rgba(255,255,255,0.1);transform:translateY(-4px)}
+.pourqui-card-ico{font-size:36px;margin-bottom:14px}
+.pourqui-card h3{font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:8px;color:var(--white)}
+.pourqui-card p{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.7}
+
+/* ===== SECTION INSPIRANTE ===== */
+.inspire{background:linear-gradient(135deg,#1A1A2E 0%,#0D47A1 100%);padding:clamp(60px,10vw,100px) clamp(16px,5vw,80px);overflow:hidden;position:relative}
+.inspire::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(230,81,0,0.2) 0%,transparent 60%)}
+.inspire-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.inspire-visual{border-radius:24px;overflow:hidden;position:relative;aspect-ratio:4/5}
+.inspire-visual-bg{width:100%;height:100%;background:linear-gradient(135deg,rgba(230,81,0,0.8) 0%,rgba(0,200,83,0.6) 100%);display:flex;align-items:center;justify-content:center;font-size:clamp(100px,20vw,160px);position:relative;border-radius:24px}
+.inspire-visual-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,0.6) 100%);border-radius:24px}
+.inspire-visual-text{position:absolute;bottom:24px;left:24px;right:24px;color:var(--white);font-family:var(--font-head);font-size:1.4rem;font-weight:900;line-height:1.3}
+.inspire-content{color:var(--white)}
+.inspire-label{font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--orange-light);margin-bottom:16px;display:block}
+.inspire-title{font-family:var(--font-head);font-size:clamp(1.8rem,4vw,3rem);font-weight:900;line-height:1.1;margin-bottom:24px}
+.inspire-title em{color:var(--orange-light);font-style:italic}
+.inspire-values{display:flex;flex-direction:column;gap:16px;margin-bottom:32px}
+.inspire-value{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px 20px}
+.inspire-value-ico{font-size:28px;flex-shrink:0}
+.inspire-value-text h4{font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:4px}
+.inspire-value-text p{font-size:.85rem;color:rgba(255,255,255,.65);line-height:1.5}
+
+/* ===== TEMOIGNAGES ===== */
+.temoignages{background:var(--off-white)}
+.temoignages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.temo-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:28px 24px;transition:transform .3s,box-shadow .3s}
+.temo-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(13,71,161,0.1)}
+.temo-quote{font-size:48px;line-height:1;color:var(--orange);opacity:.25;font-family:Georgia,serif;margin-bottom:4px}
+.temo-stars{display:flex;gap:3px;margin-bottom:12px}
+.temo-star{color:#F59E0B;font-size:16px}
+.temo-text{font-size:.9rem;color:var(--text-muted);line-height:1.75;margin-bottom:20px;font-style:italic}
+.temo-author{display:flex;align-items:center;gap:12px}
+.temo-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:var(--white);flex-shrink:0}
+.temo-name{font-weight:700;font-size:.9rem;color:var(--text);display:block}
+.temo-loc{font-size:.8rem;color:var(--text-muted)}
+
+/* Testimonial form */
+.temo-form-wrap{background:var(--white);border:1.5px solid var(--border);border-radius:20px;padding:32px;margin-top:40px}
+.temo-form-title{font-family:var(--font-head);font-size:1.2rem;font-weight:800;color:var(--text);margin-bottom:20px}
+.temo-form{display:grid;gap:14px}
+.temo-input{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font-body);font-size:14px;color:var(--text);outline:none;transition:border-color .2s}
+.temo-input:focus{border-color:var(--orange)}
+.temo-stars-input{display:flex;gap:6px;margin-bottom:4px}
+.temo-stars-input span{font-size:28px;cursor:pointer;transition:transform .15s;color:#DDD}
+.temo-stars-input span.active{color:#F59E0B}
+.temo-stars-input span:hover{transform:scale(1.2)}
+.temo-submit{background:linear-gradient(135deg,var(--orange),#FF5722);color:var(--white);border:none;padding:14px 32px;border-radius:8px;font-family:var(--font-body);font-size:15px;font-weight:700;cursor:pointer;transition:all .25s}
+.temo-submit:hover{transform:translateY(-2px);box-shadow:var(--shadow-orange)}
+
+/* ===== AUTH SECTION ===== */
+.auth-section{background:var(--white);padding:clamp(60px,10vw,100px) clamp(16px,5vw,80px)}
+.auth-inner{max-width:900px;margin:0 auto}
+.auth-tabs{display:flex;background:var(--off-white);border-radius:12px;padding:4px;margin-bottom:28px;width:fit-content;margin-left:auto;margin-right:auto}
+.auth-tab{padding:10px 28px;border-radius:9px;font-family:var(--font-head);font-size:14px;font-weight:700;cursor:pointer;transition:all .25s;border:none;background:none;color:var(--text-muted)}
+.auth-tab.active{background:var(--white);color:var(--orange);box-shadow:0 2px 12px rgba(0,0,0,0.08)}
+.auth-form{display:none;max-width:460px;margin:0 auto;background:var(--white);border:1.5px solid var(--border);border-radius:20px;padding:36px}
+.auth-form.active{display:block}
+.auth-form h3{font-family:var(--font-head);font-size:1.4rem;font-weight:900;margin-bottom:6px;color:var(--text)}
+.auth-form p{font-size:13px;color:var(--text-muted);margin-bottom:24px}
+.auth-input-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.auth-label{font-size:12px;font-weight:700;color:var(--text);letter-spacing:.05em;text-transform:uppercase}
+.auth-input{width:100%;padding:13px 16px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font-body);font-size:15px;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s}
+.auth-input:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(230,81,0,0.1)}
+.auth-btn{width:100%;padding:15px;background:linear-gradient(135deg,var(--orange),#FF5722);color:var(--white);border:none;border-radius:9px;font-size:15px;font-weight:800;cursor:pointer;margin-top:6px;transition:all .25s}
+.auth-btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-orange)}
+
+/* ===== FINAL CTA ===== */
+.final-cta{background:linear-gradient(135deg,var(--blue) 0%,#1565C0 100%);padding:clamp(60px,10vw,100px) clamp(16px,5vw,80px);text-align:center;color:var(--white);position:relative;overflow:hidden}
+.final-cta::before{content:'';position:absolute;top:-80px;left:-80px;width:320px;height:320px;border-radius:50%;background:rgba(230,81,0,0.12)}
+.final-cta::after{content:'';position:absolute;bottom:-100px;right:-60px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,0.05)}
+.final-cta-inner{position:relative;z-index:1;max-width:700px;margin:0 auto}
+.final-cta h2{font-family:var(--font-head);font-size:clamp(1.8rem,4vw,3rem);font-weight:900;margin-bottom:16px;line-height:1.15}
+.final-cta h2 em{color:var(--orange-light);font-style:italic}
+.final-cta p{font-size:1rem;opacity:.8;margin-bottom:28px;line-height:1.7}
+.final-cta-btns{display:flex;flex-direction:column;align-items:center;gap:12px}
+
+/* ===== FOOTER ===== */
+footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,56px) clamp(16px,5vw,80px)}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px}
+.footer-desc{font-size:13px;line-height:1.8;margin-bottom:20px;max-width:280px}
+.footer-socials{display:flex;gap:10px}
+.footer-soc{width:38px;height:38px;border:1px solid rgba(255,255,255,.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;transition:background .2s,border-color .2s}
+.footer-soc:hover{background:var(--orange);border-color:var(--orange)}
+.footer-col h4{font-family:var(--font-head);font-size:11px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--white);margin-bottom:18px}
+.footer-col a{display:block;font-size:13px;color:rgba(255,255,255,.6);margin-bottom:10px;transition:color .2s}
+.footer-col a:hover{color:var(--orange-light)}
+.footer-bottom{max-width:1100px;margin:40px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px}
+.footer-cta-strip{background:linear-gradient(135deg,var(--orange),#FF5722);padding:20px clamp(16px,5vw,80px);text-align:center}
+.footer-cta-strip-btn{background:var(--white);color:var(--orange);font-size:15px;font-weight:900;padding:14px 36px;border-radius:8px;border:none;cursor:pointer;transition:all .25s}
+.footer-cta-strip-btn:hover{background:var(--orange-pale)}
+
+/* ===== FLOAT WA ===== */
+.float-wa{position:fixed;bottom:28px;right:28px;z-index:800;width:62px;height:62px;border-radius:50%;background:#25D366;color:var(--white);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .3s var(--ease);animation:waPulse 2.5s ease infinite;text-decoration:none}
+.float-wa:hover{transform:scale(1.12)}
+.float-wa svg{width:30px;height:30px;fill:currentColor}
+.float-wa-label{position:absolute;right:74px;background:var(--white);color:var(--text);font-size:12px;font-weight:700;padding:8px 16px;border-radius:20px;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,0.12);opacity:0;transform:translateX(8px);transition:opacity .25s,transform .25s;pointer-events:none}
+.float-wa:hover .float-wa-label{opacity:1;transform:translateX(0)}
+
+/* ===== MODAL ===== */
+.modal-overlay{position:fixed;inset:0;z-index:1000;background:rgba(13,71,161,0.55);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.modal-overlay.open{opacity:1;visibility:visible}
+.modal{background:var(--white);border-radius:20px;width:100%;max-width:480px;padding:clamp(28px,5vw,44px);position:relative;transform:translateY(24px) scale(.97);transition:transform .35s var(--ease);overflow:hidden;max-height:90vh;overflow-y:auto}
+.modal-overlay.open .modal{transform:none}
+.modal::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--orange),var(--green),var(--blue))}
+.modal-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:var(--white);color:var(--text-muted);font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,color .2s;line-height:1}
+.modal-close:hover{background:var(--orange);color:var(--white)}
+.modal-head{text-align:center;margin-bottom:20px}
+.modal-ico{font-size:48px;display:block;margin-bottom:12px}
+.modal-title{font-family:var(--font-head);font-size:1.5rem;font-weight:900;color:var(--text);margin-bottom:6px;line-height:1.2}
+.modal-sub{font-size:13px;color:var(--text-muted);line-height:1.6}
+.modal-price-tag{display:inline-flex;align-items:center;gap:6px;background:var(--orange-dim);border:1px solid rgba(230,81,0,.25);border-radius:20px;padding:5px 14px;margin-top:10px;font-size:13px;font-weight:700;color:var(--orange)}
+.modal-pay-btn{width:100%;padding:18px;background:linear-gradient(135deg,var(--green),#00E676);color:var(--white);border:none;border-radius:10px;font-family:var(--font-body);font-size:17px;font-weight:900;cursor:pointer;transition:all .25s;animation:pulseGreen 2.5s ease infinite;display:flex;align-items:center;justify-content:center;gap:10px;letter-spacing:.02em;box-shadow:var(--shadow-green);margin-top:12px;text-decoration:none}
+.modal-pay-btn:hover{background:linear-gradient(135deg,#00E676,var(--green));transform:translateY(-2px);box-shadow:0 16px 48px rgba(0,200,83,0.5)}
+.modal-note{text-align:center;font-size:12px;color:var(--text-muted);margin-top:14px;line-height:1.6}
+.modal-note strong{color:var(--text)}
+.spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,.4);border-top-color:var(--white);border-radius:50%;animation:spin .7s linear infinite;display:none}
+
+/* ===== POPUP AUTO ===== */
+.popup-overlay{position:fixed;inset:0;z-index:1050;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:all .4s}
+.popup-overlay.open{opacity:1;visibility:visible}
+.popup{background:var(--white);border-radius:24px;max-width:500px;width:100%;padding:40px 36px;position:relative;transform:translateY(20px) scale(.95);transition:transform .4s var(--ease);overflow:hidden;text-align:center}
+.popup-overlay.open .popup{transform:none}
+.popup::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--orange),var(--green))}
+.popup-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--white);color:var(--text-muted);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;line-height:1}
+.popup-icon{font-size:64px;margin-bottom:16px;display:block}
+.popup-title{font-family:var(--font-head);font-size:1.6rem;font-weight:900;color:var(--text);margin-bottom:8px}
+.popup-sub{font-size:14px;color:var(--text-muted);line-height:1.6;margin-bottom:20px}
+.popup-price{margin-bottom:20px}
+.popup-price-old{font-size:1.1rem;color:var(--text-muted);text-decoration:line-through}
+.popup-price-new{font-family:var(--font-head);font-size:2.8rem;font-weight:900;color:var(--orange)}
+.popup-price-new small{font-size:1.4rem}
+.popup-urgency{background:var(--orange-dim);border:1px solid rgba(230,81,0,.2);border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700;color:var(--orange);margin-bottom:20px;display:inline-block}
+
+/* ===== TOAST ===== */
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--white);padding:14px 24px;border-radius:10px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,.25);opacity:0;transition:all .35s var(--ease);z-index:1100;white-space:nowrap;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .hero::before{width:40%}
+  .modules-grid{grid-template-columns:1fr;gap:16px}
+  .pourqui-grid{grid-template-columns:1fr 1fr}
+  .temoignages-grid{grid-template-columns:1fr 1fr}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:36px}
+  .horaires-grid{grid-template-columns:repeat(3,1fr)}
+  .inspire-inner{grid-template-columns:1fr}
+  .inspire-visual{max-height:300px}
+}
+@media(max-width:768px){
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero::before{display:none}
+  .hero-visual{order:-1}
+  .hero-visual-main{max-width:260px;margin:0 auto}
+  .hero-pill-1,.hero-pill-2,.hero-pill-3{display:none}
+  .confiance-grid{grid-template-columns:1fr}
+  .pourqui-grid{grid-template-columns:1fr}
+  .temoignages-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .hero-offer-box{max-width:100%}
+  .horaires-grid{grid-template-columns:repeat(2,1fr)}
+  .inspire-inner{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .hero-ctas{flex-direction:column}
+  .hero-ctas .btn{width:100%}
+  .trust-grid{grid-template-columns:1fr}
+  .trust-card.featured{grid-column:span 1}
+  .urgency-banner{flex-direction:column;gap:10px;text-align:center}
+  .float-wa{bottom:16px;right:16px;width:54px;height:54px}
+  .horaires-grid{grid-template-columns:1fr 1fr}
+  .final-cta-btns .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div class="loader" id="loader">
+  <div class="loader-logo">EDUFEMME<span>'D'AFRIQ</span></div>
+  <div class="loader-spinner"></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <div class="loader-text">Chargement de ta formation...</div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast"></div>
+
+<!-- ===== LIVE NOTIFICATIONS container ===== -->
+<div id="liveNotifContainer"></div>
+
+<!-- ===== POPUP AUTO ===== -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup()">✕</button>
+    <span class="popup-icon">🔥</span>
+    <div class="popup-title">Offre Limitée !</div>
+    <div class="popup-sub">Les places se remplissent vite.<br>Rejoins la formation LIVE sur Zoom maintenant !</div>
+    <div class="popup-price">
+      <div class="popup-price-old">99 000 FCFA</div>
+      <div class="popup-price-new"><small>seulement </small>3 500 <small>FCFA</small></div>
+    </div>
+    <div class="popup-urgency">⏳ Offre promotionnelle limitée — Agis maintenant !</div>
+    <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="modal-pay-btn" style="text-decoration:none;display:flex">
+      ✅ S'inscrire maintenant — 4 960 FCFA
+    </a>
+    <div style="margin-top:12px;font-size:12px;color:var(--text-muted)">🔒 Paiement sécurisé · Accès immédiat</div>
+  </div>
+</div>
+
+<!-- ===== FLOATING WA ===== -->
+<a class="float-wa" href="https://wa.me/18674670693?text=Bonjour%2C%20j%27ai%20un%20probl%C3%A8me%20de%20paiement%20pour%20la%20formation%20EDUFEMME%20D%27AFRIQ" target="_blank" rel="noopener" title="Problème de paiement ? Contactez-nous sur WhatsApp" aria-label="WhatsApp Support">
+  <span class="float-wa-label">💳 Problème de paiement ? Écris-nous</span>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+  <div class="nav-logo">
+    
+      <ellipse cx="58" cy="48" rx="28" ry="34" fill="#E65100"/>
+      <ellipse cx="70" cy="72" rx="5" ry="9" fill="#E65100"/>
+      <circle cx="50" cy="28" r="2.5" fill="white" opacity=".9"/><circle cx="72" cy="35" r="2.5" fill="white" opacity=".9"/>
+      <circle cx="75" cy="55" r="2.5" fill="white" opacity=".9"/><circle cx="62" cy="68" r="2.5" fill="white" opacity=".9"/>
+      <circle cx="44" cy="60" r="2.5" fill="white" opacity=".9"/><circle cx="42" cy="40" r="2.5" fill="white" opacity=".9"/>
+      <line x1="50" y1="28" x2="72" y2="35" stroke="white" stroke-width="1" opacity=".5"/>
+      <line x1="72" y1="35" x2="75" y2="55" stroke="white" stroke-width="1" opacity=".5"/>
+      <line x1="75" y1="55" x2="62" y2="68" stroke="white" stroke-width="1" opacity=".5"/>
+      <line x1="62" y1="68" x2="44" y2="60" stroke="white" stroke-width="1" opacity=".5"/>
+      <line x1="44" y1="60" x2="42" y2="40" stroke="white" stroke-width="1" opacity=".5"/>
+      <line x1="42" y1="40" x2="50" y2="28" stroke="white" stroke-width="1" opacity=".5"/>
+      <circle cx="61" cy="50" r="11" fill="rgba(255,255,255,0.22)"/>
+    </svg>
+   
+ <div class="nav-logo">
+     <img src="logo.jpg" width="100" alt="EDUFEMME D'AFRIQUE Logo">
+    </div>
+  </div>
+  <div class="nav-links">
+    <a class="nav-link" href="#programme">Programme</a>
+    <a class="nav-link" href="#horaires">Horaires</a>
+    <a class="nav-link" href="#offre">L'Offre</a>
+    <a class="nav-link" href="#temoignages">Témoignages</a>
+    <a class="nav-link" href="#auth">Compte</a>
+  </div>
+  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o nav-cta btn-pulse-o" style="text-decoration:none">🎓 S'inscrire maintenant</a>
+  <button class="hamburger" id="hamburger" onclick="toggleMob()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-menu" id="mobMenu">
+  <a href="#programme" onclick="toggleMob()">Programme</a>
+  <a href="#horaires" onclick="toggleMob()">Horaires</a>
+  <a href="#offre" onclick="toggleMob()">L'Offre</a>
+  <a href="#temoignages" onclick="toggleMob()">Témoignages</a>
+  <a href="#auth" onclick="toggleMob()">Mon Compte</a>
+  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-lg btn-pulse-g" style="text-decoration:none">✅ S'inscrire — 4 960 FCFA</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <span>Nouvelle session · Lundi 20 avril 2026</span>
+      </div>
+      <div class="hero-live-badge">
+        <div class="live-dot"></div>
+        <span>🎥 FORMATION LIVE sur Zoom · Lun–Ven 20h–22h (Cameroun)</span>
+      </div>
+      <h1>Transforme ton Téléphone en<br><span class="ao">Machine à Revenus</span><br>en <span class="ab">7 jours</span></h1>
+      <p class="hero-sub">La formation intensive LIVE qui te donne les vraies compétences du commerce numérique africain : importer depuis la Chine, vendre en ligne et créer ton propre site web — sans coder.</p>
+      <div class="hero-offer-box">
+        <div>
+          <div style="font-size:13px;color:var(--text-muted);text-decoration:line-through;font-weight:600">❌ 99 000 FCFA (177,11 USD)</div>
+          <div class="hero-price">✅ 4 960 FCFA</div>
+          <div style="font-size:12px;color:var(--text-muted)">= 8,95 USD seulement</div>
+        </div>
+        <div class="hero-badge2" style="padding:8px 14px;font-size:12px">🔥 −97%<br>PROMO</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">✅ S'inscrire maintenant</a>
+        <a class="btn btn-ob" href="#programme">Voir le programme</a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item">📅 Démarre le 20 avril 2026</div>
+        <div class="hero-trust-item">🎥 LIVE Zoom · 20h–22h</div>
+        <div class="hero-trust-item">🌍 Toute l'Afrique</div>
+        <div class="hero-trust-item">🔒 Paiement sécurisé</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-main">
+       <div class="card-container">
+    <img src="logo2.jpg"  alt="Description" class="card-image">
+</div>
+        <span class="hero-visual-emoji"></span>
+      </div>
+      <div class="hero-pill hero-pill-1"><span class="hero-pill-ico">📦</span> Import Chine</div>
+      <div class="hero-pill hero-pill-2"><span class="hero-pill-ico">🛒</span> Vente en ligne</div>
+      <div class="hero-pill hero-pill-3"><span class="hero-pill-ico">🌐</span> Site IA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== URGENCY ===== -->
+<div class="urgency-banner">
+  <span class="urgency-text">🔥 Offre promotionnelle — Places limitées ! Se termine dans :</span>
+  <div class="urgency-timer">
+    <div class="timer-block" id="th">47</div>
+    <span class="timer-sep">:</span>
+    <div class="timer-block" id="tm">23</div>
+    <span class="timer-sep">:</span>
+    <div class="timer-block" id="ts">47</div>
+  </div>
+  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="urgency-btn" style="text-decoration:none">✅ Rejoindre la formation →</a>
+</div>
+
+<!-- ===== PRIX ULTRA VISIBLE ===== -->
+<div class="prix-hero">
+  <div class="prix-inner">
+    <div class="prix-promo-badge">🏷️ Offre promotionnelle limitée</div>
+    <div class="prix-old">❌ 99 000 FCFA (177,11 USD)</div>
+    <div class="prix-new">✅ 4 960 <span class="prix-fcfa">FCFA</span></div>
+    <div class="prix-usd">soit seulement 8,95 USD — Accès complet à la formation LIVE</div>
+    <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="prix-cta-btn" style="display:inline-block;text-decoration:none;color:white;margin-top:24px">
+      🎓 Rejoindre la Formation — Payer Maintenant
+    </a>
+    <div style="margin-top:16px;color:rgba(255,255,255,0.6);font-size:13px">🔒 Paiement sécurisé · 💬 Support WhatsApp · ✅ Accès immédiat</div>
+  </div>
+</div>
+
+<!-- ===== PLACES LIMITÉES ===== -->
+<div class="places-section">
+  <div class="places-inner">
+    <div class="places-title reveal"> Places Limitées : 1000 Participantes Maximum</div>
+    <div class="places-subtitle reveal">Les places se remplissent rapidement — Reserve la tienne maintenant !</div>
+    <div class="places-counter-wrap reveal">
+      <div class="places-counter-row">
+        <div class="places-counter-num" id="placesCounter">742</div>
+        <div class="places-counter-label">
+          <span>places restantes</span>
+          <strong>sur 1 000 au total</strong>
+        </div>
+      </div>
+      <div class="places-progress">
+        <div class="places-progress-fill" id="placesBar" style="width:74.2%"></div>
+      </div>
+      <div class="places-progress-text">
+        <span>🟢 258 inscrites</span>
+        <span>742 places restantes</span>
+      </div>
+    </div>
+    <div class="places-cta reveal">
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-xl btn-pulse-o" style="text-decoration:none">
+        🔥 Réserver ma Place Maintenant
+      </a>
+      <p style="margin-top:12px;font-size:13px;color:var(--text-muted)">⚠️ Une place réservée = une participante inscrite. N'attend pas !</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROGRAMME ===== -->
+<section class="section programme" id="programme">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="label lo">Le Programme</span>
+      <h2>3 Piliers pour ton<br><em>Indépendance Financière</em></h2>
+      <div class="divider-line div-o" style="margin-bottom:16px"></div>
+      <p>7 jours de formation intensive LIVE sur Zoom, 14h de contenu actionnable. Chaque module t'apporte une compétence immédiatement monnayable.</p>
+    </div>
+    <div class="modules-grid">
+      <div class="module-card mc1 reveal">
+        <div class="module-number">01</div>
+        <div class="module-icon">📦</div>
+        <span class="module-tag">Module 1 · Jours 1-2</span>
+        <h3>Importation Chine-Afrique</h3>
+        <p>Apprends à sourcer des produits de qualité sur Alibaba & AliExpress, les faire livrer en Afrique et dégager des marges attractives.</p>
+        <div class="module-items">
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Trouver les meilleurs fournisseurs chinois</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Négocier les prix et minimums de commande</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Gérer la logistique et les douanes africaines</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Calcul des marges et protection contre les arnaques</span></div>
+        </div>
+      </div>
+      <div class="module-card mc2 reveal d1">
+        <div class="module-number">02</div>
+        <div class="module-icon">🛒</div>
+        <span class="module-tag">Module 2 · Jours 3-5</span>
+        <h3>Vente en Ligne</h3>
+        <p>Maîtrise les stratégies de vente digitale sur WhatsApp Business, Facebook, Instagram et TikTok pour générer des revenus réguliers.</p>
+        <div class="module-items">
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Construire une boutique WhatsApp qui convertit</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Créer des publications qui vendent sur les réseaux</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Techniques de closing et fidélisation client</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Publicité payante à petit budget (Facebook Ads)</span></div>
+        </div>
+      </div>
+      <div class="module-card mc3 reveal d2">
+        <div class="module-number">03</div>
+        <div class="module-icon">🌐</div>
+        <span class="module-tag">Module 3 · Jours 6-7</span>
+        <h3>Création de Site Web par IA</h3>
+        <p>Crée ton propre site e-commerce professionnel en moins de 2h grâce à l'intelligence artificielle, même si tu n'as jamais codé.</p>
+        <div class="module-items">
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Utiliser les outils IA (ChatGPT, Wix, Shopify AI)</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Design professionnel sans compétences techniques</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Intégrer les paiements mobile money (MTN, Orange)</span></div>
+          <div class="module-item"><div class="module-item-dot">✓</div><span>Référencement local pour être visible sur Google</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-cta reveal d3">
+      <div class="section-cta-box">
+        <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">🎓 Rejoindre la Formation — 4 960 FCFA</a>
+        <p>✅ Accès immédiat · 🎥 LIVE Zoom · 💬 Support WhatsApp · 🏆 Attestation incluse</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HORAIRES PAR PAYS ===== -->
+<section class="horaires" id="horaires">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="label" style="color:rgba(255,255,255,.6)">Formation LIVE sur Zoom</span>
+      <h2>Horaires par <em style="color:var(--orange-light)">Pays Africain</em></h2>
+      <div class="divider-line" style="background:var(--orange-light);margin-bottom:16px"></div>
+      <p>La formation se déroule en direct sur Zoom. Voici les horaires adaptés à chaque fuseau horaire :</p>
+    </div>
+    <div class="horaires-live-banner reveal">
+      <div class="horaires-live-dot"></div>
+      <div class="horaires-live-text">🎥 Formation LIVE sur Zoom · Lundi au Vendredi · Durée : 2h par soir</div>
+      <div class="zoom-logo">📹 ZOOM</div>
+    </div>
+    <div class="horaires-grid">
+      <div class="horaire-card reveal">
+        <div class="horaire-flag">🇨🇲</div>
+        <div class="horaire-pays">Cameroun</div>
+        <div class="horaire-heure">20h – 22h</div>
+        <div class="horaire-zoom">Heure locale</div>
+      </div>
+      <div class="horaire-card reveal d1">
+        <div class="horaire-flag">🇨🇮</div>
+        <div class="horaire-pays">Côte d'Ivoire</div>
+        <div class="horaire-heure">19h – 21h</div>
+        <div class="horaire-zoom">Heure locale</div>
+      </div>
+      <div class="horaire-card reveal d2">
+        <div class="horaire-flag">🇸🇳</div>
+        <div class="horaire-pays">Sénégal</div>
+        <div class="horaire-heure">19h – 21h</div>
+        <div class="horaire-zoom">Heure locale</div>
+      </div>
+      <div class="horaire-card reveal d3">
+        <div class="horaire-flag">🇧🇯</div>
+        <div class="horaire-pays">Bénin</div>
+        <div class="horaire-heure">20h – 22h</div>
+        <div class="horaire-zoom">Heure locale</div>
+      </div>
+      <div class="horaire-card reveal">
+        <div class="horaire-flag">🇹🇬</div>
+        <div class="horaire-pays">Togo</div>
+        <div class="horaire-heure">20h – 22h</div>
+        <div class="horaire-zoom">Heure locale</div>
+      </div>
+      <div class="horaire-card reveal d1">
+        <div class="horaire-flag">🇬🇦</div>
+        <div class="horaire-pays">Gabon</div>
+        <div class="horaire-heure">20h – 22h</div>
+        <div class="horaire-zoom">Heure locale</div>
+      </div>
+      <div class="horaire-card reveal d2">
+        <div class="horaire-flag">🇨🇩</div>
+        <div class="horaire-pays">RDC</div>
+        <div class="horaire-heure">21h – 23h</div>
+        <div class="horaire-zoom">Heure locale (Kinshasa)</div>
+      </div>
+      <div class="horaire-card reveal d3" style="background:rgba(255,255,255,0.12);border-color:var(--orange-light)">
+        <div class="horaire-flag">🌍</div>
+        <div class="horaire-pays">Autre pays ?</div>
+        <div class="horaire-heure" style="font-size:1rem">Contacte-nous</div>
+        <div class="horaire-zoom">WhatsApp disponible</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px" class="reveal">
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-lg btn-pulse-o" style="text-decoration:none">
+        📅 Réserver ma Place LIVE
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCHAINE SESSION ===== -->
+<div class="dates-section">
+  <div class="dates-inner">
+    <div class="section-head reveal" style="margin-bottom:28px">
+      <span class="label lb">Prochaine Session</span>
+      <h2>Quand <strong>Commence</strong> la Formation ?</h2>
+    </div>
+    <div class="next-session-box reveal">
+      <div class="next-session-label">🗓️ Prochaine session disponible</div>
+      <div class="next-session-date" id="nextSessionDate">Lundi 20 avril 2026</div>
+      <div class="next-session-desc">Formation de 7 jours · Du lundi au vendredi · Sur Zoom</div>
+      <div class="session-detail">📅 Lun–Ven · ⏰ 20h–22h (Cameroun) · 📹 Zoom LIVE</div>
+    </div>
+    <div class="reveal">
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">
+         S'inscrire pour cette Session
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== OFFRE / PRIX ===== -->
+<section class="section confiance" id="offre">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="label lb">L'Offre Irrésistible</span>
+      <h2><strong>7 Jours</strong> pour Tout Changer.<br>Un Prix qui <em>N'a Pas de Sens</em></h2>
+      <div class="divider-line div-b" style="margin-bottom:16px"></div>
+      <p>Nous voulons que toutes les femmes africaines accèdent à ces compétences. C'est pourquoi nous avons cassé les prix.</p>
+    </div>
+    <div class="confiance-grid">
+      <div class="offer-block reveal">
+        <div class="offer-block-content">
+          <span class="offer-eyebrow">Formation Complète · Édition Limitée</span>
+          <div class="offer-promo-banner">🏷️ Offre promotionnelle limitée</div>
+          <div class="offer-price-row">
+            <div class="offer-price-crossed">❌ 99 000 FCFA <small>(177,11 USD)</small></div>
+            <div class="offer-price-new">4 960 <small>FCFA</small></div>
+            <div class="offer-price-usd">✅ soit seulement 8,95 USD</div>
+          </div>
+          <div class="offer-savings">🎉 Tu économises 95 500 FCFA (−97%)</div>
+          <div class="offer-details">
+            <div class="offer-detail"><div class="offer-detail-ico">🎥</div><span><strong>Formation LIVE</strong> sur Zoom · Lun–Ven 20h–22h</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico">📅</div><span><strong>7 jours</strong> de formation intensive en direct</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico">⏱</div><span><strong>14 heures</strong> de cours au total</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico">📚</div><span><strong>3 modules</strong> : Import · Vente · Site Web IA</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico">💬</div><span><strong>Accès WhatsApp</strong> au groupe de suivi exclusif</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico">🏆</div><span><strong>Attestation</strong> numérique de fin de formation</span></div>
+          </div>
+          <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="offer-btn-green" style="text-decoration:none;display:flex;align-items:center;justify-content:center;gap:10px">
+            ✅ S'inscrire maintenant — 4 960 FCFA
+          </a>
+        </div>
+      </div>
+      <div class="reveal d1">
+        <div class="trust-grid">
+          <div class="trust-card"><div class="trust-card-ico">👩🏾‍💻</div><span class="trust-card-val" id="statA">0</span><span class="trust-card-lbl">Femmes formées</span></div>
+          <div class="trust-card"><div class="trust-card-ico">🌍</div><span class="trust-card-val" id="statP">0</span><span class="trust-card-lbl">Pays africains</span></div>
+          <div class="trust-card"><div class="trust-card-ico">⭐</div><span class="trust-card-val">4.9</span><span class="trust-card-lbl">Note moyenne</span></div>
+          <div class="trust-card"><div class="trust-card-ico">💼</div><span class="trust-card-val" id="statB">0</span><span class="trust-card-lbl">Business lancés</span></div>
+          <div class="trust-card featured"><div class="trust-card-ico">🔒</div><div><span class="trust-card-val">100%</span><span class="trust-card-lbl">Satisfaites ou remboursées sous 48h</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION INSPIRANTE ===== -->
+<section class="inspire">
+  <div class="inspire-inner">
+    <div class="inspire-visual reveal">
+      <div class="inspire-visual-bg">
+        👩🏾‍💼
+        <div class="inspire-visual-overlay"></div>
+        <div class="inspire-visual-text">La liberté financière commence ici </div>
+      </div>
+    </div>
+    <div class="inspire-content reveal d1">
+      <span class="inspire-label">Ton avenir commence aujourd'hui</span>
+      <h2 class="inspire-title">Deviens la Femme<br>que tu <em>Mérites d'Être</em></h2>
+      <div class="inspire-values">
+        <div class="inspire-value">
+          <div class="inspire-value-ico">💰</div>
+          <div class="inspire-value-text">
+            <h4>Liberté Financière</h4>
+            <p>Génère tes propres revenus depuis ton téléphone. Tu n'as plus besoin d'attendre un salaire ou un mari pour vivre dignement.</p>
+          </div>
+        </div>
+        <div class="inspire-value">
+          <div class="inspire-value-ico">👑</div>
+          <div class="inspire-value-text">
+            <h4>Indépendance</h4>
+            <p>Construis un business 100% à toi. Fixe tes propres horaires, travaille depuis chez toi, sois ta propre patronne.</p>
+          </div>
+        </div>
+        <div class="inspire-value">
+          <div class="inspire-value-ico">🚀</div>
+          <div class="inspire-value-text">
+            <h4>Réussite & Épanouissement</h4>
+            <p>Des femmes comme toi ont déjà transformé leur vie. Dans 7 jours, tu seras sur le même chemin vers le succès.</p>
+          </div>
+        </div>
+      </div>
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">
+        🌟 Je veux ma Liberté Financière
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POUR QUI ===== -->
+<section class="section pourqui">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="label" style="color:rgba(255,255,255,.6)">Cette Formation est Faite Pour Toi</span>
+      <h2>Pour <em style="color:var(--orange-light)">Quelle Femme</em> ?</h2>
+      <div class="divider-line" style="background:var(--orange-light);margin-bottom:16px"></div>
+      <p>Peu importe ton point de départ, si tu as un téléphone et la volonté d'avancer, cette formation est pour toi.</p>
+    </div>
+    <div class="pourqui-grid">
+      <div class="pourqui-card reveal"><div class="pourqui-card-ico">🏠</div><h3>Maman au foyer</h3><p>Tu veux générer un revenu depuis chez toi sans sacrifier ta famille. Cette formation s'adapte à ton emploi du temps.</p></div>
+      <div class="pourqui-card reveal d1"><div class="pourqui-card-ico">🎓</div><h3>Étudiante ambitieuse</h3><p>Tu veux financer tes études et acquérir des compétences concrètes que les diplômes n'enseignent pas.</p></div>
+      <div class="pourqui-card reveal d2"><div class="pourqui-card-ico">💼</div><h3>Salariée sous-payée</h3><p>Tu veux créer une source de revenus complémentaire et préparer ton indépendance financière.</p></div>
+      <div class="pourqui-card reveal d3"><div class="pourqui-card-ico">🛒</div><h3>Commerçante débutante</h3><p>Tu vends déjà mais tu veux aller plus loin en ligne. Cette formation va professionnaliser ton approche.</p></div>
+      <div class="pourqui-card reveal d1"><div class="pourqui-card-ico">🌐</div><h3>Diaspora africaine</h3><p>Tu veux créer un lien commercial avec l'Afrique, importer ou exporter intelligemment depuis l'étranger.</p></div>
+      <div class="pourqui-card reveal d2"><div class="pourqui-card-ico">🚀</div><h3>Entrepreneuse en herbe</h3><p>Tu as une idée de business mais tu ne sais pas par où commencer. Ces 7 jours te donnent le plan d'action complet.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:48px" class="reveal">
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-lg btn-pulse-o" style="text-decoration:none">✅ C'est fait pour moi — S'inscrire maintenant</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEMOIGNAGES ===== -->
+<section class="section temoignages" id="temoignages">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <span class="label lo">Elles l'ont vécu</span>
+      <h2>Ce qu'en Disent<br><em>Nos Apprenantes</em></h2>
+      <div class="divider-line div-o" style="margin-bottom:16px"></div>
+      <p>Des femmes ordinaires qui ont obtenu des résultats extraordinaires grâce à cette formation.</p>
+    </div>
+    <div class="temoignages-grid">
+      <div class="temo-card reveal">
+        <div class="temo-quote">"</div>
+        <div class="temo-stars">⭐⭐⭐⭐⭐</div>
+        <p class="temo-text">En 7 jours j'ai appris à importer depuis la Chine et j'ai revendu ma première commande avec 40% de marge. Un investissement de 4960 FCFA qui m'a rapporté 85 000 FCFA en 3 semaines !</p>
+        <div class="temo-author"><div class="temo-avatar" style="background:var(--orange)">A</div><div><span class="temo-name">Amina K.</span><span class="temo-loc">📍 Abidjan, Côte d'Ivoire</span></div></div>
+      </div>
+      <div class="temo-card reveal d1">
+        <div class="temo-quote">"</div>
+        <div class="temo-stars">⭐⭐⭐⭐⭐</div>
+        <p class="temo-text">Je n'y croyais pas au départ. Aujourd'hui j'ai mon propre site e-commerce créé avec l'IA et je vends des perruques en ligne. Mes clientes me trouvent sur Google ! Merci EDUFEMME !</p>
+        <div class="temo-author"><div class="temo-avatar" style="background:var(--blue)">G</div><div><span class="temo-name">Grâce M.</span><span class="temo-loc">📍 Douala, Cameroun</span></div></div>
+      </div>
+      <div class="temo-card reveal d2">
+        <div class="temo-quote">"</div>
+        <div class="temo-stars">⭐⭐⭐⭐⭐</div>
+        <p class="temo-text">La formation sur la vente en ligne a changé ma vie. J'ai désormais un groupe WhatsApp actif avec +200 clients. Mon chiffre d'affaires mensuel a triplé depuis la formation.</p>
+        <div class="temo-author"><div class="temo-avatar" style="background:linear-gradient(135deg,var(--orange),var(--blue))">F</div><div><span class="temo-name">Fatou D.</span><span class="temo-loc">📍 Dakar, Sénégal</span></div></div>
+      </div>
+    </div>
+
+    <!-- Testimonial Form -->
+    <div class="temo-form-wrap reveal">
+      <div class="temo-form-title">✍️ Partage ton Expérience</div>
+      <div class="temo-form">
+        <input class="temo-input" type="text" id="temoNom" placeholder="Ton prénom et pays (ex : Aïcha, Dakar)">
+        <div>
+          <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">Donne une note :</div>
+          <div class="temo-stars-input" id="starsInput">
+            <span data-v="1">⭐</span><span data-v="2">⭐</span><span data-v="3">⭐</span><span data-v="4">⭐</span><span data-v="5">⭐</span>
+          </div>
+        </div>
+        <textarea class="temo-input" id="temoMsg" rows="4" placeholder="Partage ton expérience avec la formation EDUFEMME D'AFRIQ..."></textarea>
+        <button class="temo-submit" onclick="submitTemoignage()">📩 Envoyer mon Témoignage via WhatsApp</button>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:32px" class="reveal">
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-lg btn-pulse-g" style="text-decoration:none">🎓 Je veux ces Résultats — S'inscrire</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPTE / AUTH ===== -->
+<section class="auth-section" id="auth">
+  <div class="auth-inner">
+    <div class="section-head reveal" style="margin-bottom:32px">
+      <span class="label lo">Espace Membre</span>
+      <h2>Crée ton <em>Compte</em> EDUFEMME</h2>
+      <div class="divider-line div-o" style="margin-bottom:16px"></div>
+      <p>Rejoins la communauté et accède à tes cours après paiement.</p>
+    </div>
+    <div class="auth-tabs reveal">
+      <button class="auth-tab active" onclick="switchTab('signup')">Créer un compte</button>
+      <button class="auth-tab" onclick="switchTab('login')">Se connecter</button>
+    </div>
+    <div class="auth-form active reveal" id="signupForm">
+      <h3> Rejoindre la Formation</h3>
+      <p>Crée ton compte gratuit, puis procède au paiement pour accéder aux cours LIVE.</p>
+      <div class="auth-input-group">
+        <label class="auth-label">Prénom & Nom</label>
+        <input class="auth-input" type="text" placeholder="Ex : Amina Kouassi">
+      </div>
+      <div class="auth-input-group">
+        <label class="auth-label">Adresse Email</label>
+        <input class="auth-input" type="email" placeholder="ton@email.com">
+      </div>
+      <div class="auth-input-group">
+        <label class="auth-label">Mot de passe</label>
+        <input class="auth-input" type="password" placeholder="Minimum 8 caractères">
+      </div>
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="auth-btn" style="display:block;text-align:center;text-decoration:none;margin-top:16px">
+         Créer mon compte & Payer (4 960 FCFA)
+      </a>
+      <div style="text-align:center;margin-top:12px;font-size:12px;color:var(--text-muted)">🔒 Données sécurisées · Paiement crypté</div>
+    </div>
+    <div class="auth-form" id="loginForm">
+      <h3>🔑 Se Connecter</h3>
+      <p>Déjà inscrite ? Accède à ton espace cours.</p>
+      <div class="auth-input-group">
+        <label class="auth-label">Adresse Email</label>
+        <input class="auth-input" type="email" placeholder="ton@email.com">
+      </div>
+      <div class="auth-input-group">
+        <label class="auth-label">Mot de passe</label>
+        <input class="auth-input" type="password" placeholder="Ton mot de passe">
+      </div>
+      <button class="auth-btn">🔓 Se Connecter</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta" id="contact">
+  <div class="final-cta-inner reveal">
+    <span class="label" style="color:rgba(255,255,255,.6);margin-bottom:16px;display:block">Prête à changer ta vie ?</span>
+    <h2>Commence Aujourd'hui.<br><em>Dans 7 jours tu seras différente.</em></h2>
+    <p>Plus de 1 000 femmes africaines ont déjà transformé leur téléphone en outil de liberté financière. C'est ton tour maintenant. Pour seulement 4 960 FCFA.</p>
+    <div class="final-cta-btns">
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">
+        ✅ S'inscrire maintenant — 4 960 FCFA
+      </a>
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-lg" style="text-decoration:none;opacity:0.9">
+        🎓 Rejoindre la Formation LIVE
+      </a>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:24px;margin-top:24px;flex-wrap:wrap;opacity:.7;font-size:13px">
+      <span>✅ Accès immédiat</span><span>🎥 LIVE Zoom</span><span>💬 Support WhatsApp</span><span>🔒 Paiement sécurisé</span><span>🏆 Attestation incluse</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER CTA STRIP ===== -->
+<div class="footer-cta-strip">
+  <div style="color:white;font-family:var(--font-head);font-size:1.1rem;font-weight:800;margin-bottom:12px">
+    💳 Problème de paiement ? Contacte-nous directement
+  </div>
+  <a href="https://wa.me/18674670693?text=Bonjour%2C%20j%27ai%20un%20probl%C3%A8me%20de%20paiement%20pour%20la%20formation%20EDUFEMME%20D%27AFRIQ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:white;font-weight:800;font-size:15px;padding:12px 28px;border-radius:8px;text-decoration:none;transition:all .25s">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    Contacter sur WhatsApp
+  </a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div style="font-family:var(--font-head);font-size:1.1rem;font-weight:900;margin-bottom:14px">
+        <span style="color:#FF7043">EDUFEMME</span> <span style="color:rgba(255,255,255,.7)">D'AFRIQ</span>
+      </div>
+      <p class="footer-desc">La plateforme de formation numérique dédiée à l'autonomisation économique des femmes africaines. De l'Afrique, pour l'Afrique.</p>
+      <div class="footer-socials">
+        <a class="footer-soc" href="https://www.tiktok.com/@edufemmedafriq" target="_blank" rel="noopener" title="TikTok">🎵</a>
+        <a class="footer-soc" href="https://www.facebook.com/share/18M2Tnb4CL/" target="_blank" rel="noopener" title="Facebook">📘</a>
+        <a class="footer-soc" href="https://wa.me/18674670693" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Formation</h4>
+      <a href="#programme">Le programme</a>
+      <a href="#horaires">Horaires LIVE</a>
+      <a href="#offre">L'offre</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener"> S'inscrire maintenant</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="https://wa.me/18674670693" target="_blank" rel="noopener">💬 WhatsApp Support</a>
+      <a href="https://www.tiktok.com/@edufemmedafriq" target="_blank" rel="noopener">🎵 @edufemmedafriq</a>
+      <a href="https://www.facebook.com/share/18M2Tnb4CL/" target="_blank" rel="noopener">📘 Facebook</a>
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" style="color:var(--orange-light);font-weight:700">💳 Payer maintenant</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025–2026 EDUFEMME D'AFRIQ — Tous droits réservés.</span>
+    <span>Fait avec ❤️ pour les femmes africaines 🌍</span>
+  </div>
+</footer>
+
+<script>
+const PAY_LINK = "https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d";
+const WHATSAPP_NUMBER = "18674670693";
+
+/* ===== LOADER ===== */
+window.addEventListener('load', function(){
+  setTimeout(function(){
+    document.getElementById('loader').classList.add('hidden');
+    // Show popup after loader
+    setTimeout(openPopup, 4000);
+  }, 2800);
+});
+
+/* ===== POPUP AUTO ===== */
+function openPopup(){
+  document.getElementById('popupOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePopup(){
+  document.getElementById('popupOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('popupOverlay').addEventListener('click',function(e){if(e.target===this)closePopup()});
+
+/* ===== NAVBAR ===== */
+window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>20));
+
+/* ===== HAMBURGER ===== */
+function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')}
+
+/* ===== TIMER ===== */
+(function(){
+  const KEY='efa2_end';
+  let end=localStorage.getItem(KEY);
+  if(!end||Date.now()>parseInt(end)){end=Date.now()+47*3600000+23*60000+47000;localStorage.setItem(KEY,end);}
+  setInterval(()=>{
+    const d=Math.max(0,parseInt(end)-Date.now());
+    const h=Math.floor(d/3600000),m=Math.floor((d%3600000)/60000),s=Math.floor((d%60000)/1000);
+    document.getElementById('th').textContent=String(h).padStart(2,'0');
+    document.getElementById('tm').textContent=String(m).padStart(2,'0');
+    document.getElementById('ts').textContent=String(s).padStart(2,'0');
+  },1000);
+})();
+
+/* ===== DATE PROCHAINE SESSION (auto +7 si passée) ===== */
+(function(){
+  const MONTHS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  const DAYS=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+  let start = new Date(2026,3,20); // 20 avril 2026
+  const now = new Date();
+  while(start < now){
+    start = new Date(start.getTime() + 7*24*3600000);
+  }
+  const el = document.getElementById('nextSessionDate');
+  if(el){
+    el.textContent = DAYS[start.getDay()] + ' ' + start.getDate() + ' ' + MONTHS[start.getMonth()] + ' ' + start.getFullYear();
+  }
+  // Update hero badge too
+  const heroBadge = document.querySelector('.hero-badge span');
+  if(heroBadge){
+    heroBadge.textContent = 'Nouvelle session · ' + DAYS[start.getDay()] + ' ' + start.getDate() + ' ' + MONTHS[start.getMonth()];
+  }
+})();
+
+/* ===== PLACES COUNTER — simulation diminution ===== */
+(function(){
+  let places = 742;
+  const totalPlaces = 1000;
+  const counter = document.getElementById('placesCounter');
+  const bar = document.getElementById('placesBar');
+  
+  function updateDisplay(){
+    if(counter){
+      counter.textContent = places;
+      counter.style.animation='none';
+      counter.offsetHeight; // reflow
+      counter.style.animation='countDown .5s ease';
+    }
+    if(bar){
+      const pct = (places/totalPlaces)*100;
+      bar.style.width = pct + '%';
+    }
+    const inscrits = totalPlaces - places;
+    const progressText = document.querySelector('.places-progress-text');
+    if(progressText){
+      progressText.children[0].textContent = '🟢 '+inscrits+' inscrites';
+      progressText.children[1].textContent = places+' places restantes';
+    }
+  }
+  
+  // Simulate a place taken every 20-60 seconds
+  function takePlaceRandomly(){
+    if(places > 200){
+      places -= 1;
+      updateDisplay();
+      showToast(' Une nouvelle participante vient de s\'inscrire !');
+    }
+    const delay = (20 + Math.random()*40)*1000;
+    setTimeout(takePlaceRandomly, delay);
+  }
+  
+  updateDisplay();
+  setTimeout(takePlaceRandomly, 15000);
+})();
+
+/* ===== LIVE NOTIFICATIONS ===== */
+const notifData = [
+  {emoji:'👩🏾', name:'Amina K.', loc:'Abidjan', msg:'vient de rejoindre la formation'},
+  {emoji:'👩🏿', name:'Blessing O.', loc:'Lagos', msg:'vient de s\'inscrire'},
+  {emoji:'👩🏾', name:'Fatou D.', loc:'Dakar', msg:'a effectué son paiement'},
+  {emoji:'👩🏽', name:'Cécile M.', loc:'Douala', msg:'vient de s\'inscrire'},
+  {emoji:'👩🏾', name:'Aicha T.', loc:'Lomé', msg:'vient de rejoindre la formation'},
+  {emoji:'👩🏿', name:'Grâce N.', loc:'Kinshasa', msg:'a réservé sa place'},
+  {emoji:'👩🏾', name:'Sandrine B.', loc:'Cotonou', msg:'vient de s\'inscrire'},
+  {emoji:'👩🏽', name:'Rose A.', loc:'Libreville', msg:'a effectué son paiement'},
+  {emoji:'👩🏽', name:'Adeline Nz.', loc:'Yaounde', msg:'a effectué son paiement'},
+  {emoji:'👩🏽', name:'Magui P.', loc:'Bafoussam', msg:'a effectué son paiement'},
+  {emoji:'👩🏽', name:'Brigite S.', loc:'Abidjan', msg:'a effectué son paiement'},
+  {emoji:'👩🏾', name:'Mirabelle A.', loc:'paris', msg:'vient de s\'inscrire'},
+  {emoji:'👩🏾', name:'Rim B.', loc:'bangi', msg:'vient de s\'inscrire'},
+  {emoji:'👩🏾', name:'Michelle de Longrich.', loc:'Djibouti', msg:'vient de s\'inscrire'},
+  {emoji:'👩🏾', name:'Murielle B.', loc:'Brazaville', msg:'vient de s\'inscrire'},
+  {emoji:'👩🏾', name:'Ariana B.', loc:'Kinshassa', msg:'vient de s\'inscrire'},
+  {emoji:'👩🏾', name:'Anriette M.', loc:'Acra', msg:'vient de rejoindre la formation'},
+  {emoji:'👩🏾', name:'Mireille Y.', loc:'Bangui', msg:'vient de rejoindre la formation'},
+  {emoji:'👩🏾', name:'Nadine Tch.', loc:'Bafoussam', msg:'vient de rejoindre la formation'},
+  {emoji:'👩🏾', name:'Noura T.', loc:'Beleko', msg:'vient de rejoindre la formation'},
+  {emoji:'👩🏾', name:'Nadia So.', loc:'Garoua', msg:'vient de rejoindre la formation'},
+];
+let notifIndex = 0;
+
+function showLiveNotif(){
+  const d = notifData[notifIndex % notifData.length];
+  notifIndex++;
+  const el = document.createElement('div');
+  el.className = 'live-notif';
+  el.innerHTML = `
+    <div class="live-notif-avatar">${d.emoji}</div>
+    <div class="live-notif-text">
+      <strong>${d.name}</strong> de ${d.loc}<br>
+      <span>${d.msg} 🎉</span>
+    </div>
+    <div class="live-notif-dot"></div>
+  `;
+  document.getElementById('liveNotifContainer').appendChild(el);
+  setTimeout(()=>el.remove(), 5000);
+}
+
+// Show notifications periodically
+setTimeout(()=>{
+  showLiveNotif();
+  setInterval(showLiveNotif, 18000);
+}, 6000);
+
+/* ===== TOAST ===== */
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),3500);
+}
+
+/* ===== SCROLL REVEAL ===== */
+const rObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');rObs.unobserve(e.target);}});
+},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>rObs.observe(el));
+
+/* ===== COUNTERS ===== */
+function animCount(el,target,suffix){
+  let c=0;const step=target/(2000/16);
+  const t=setInterval(()=>{
+    c=Math.min(c+step,target);
+    el.textContent=Math.floor(c).toLocaleString('fr-FR')+(suffix||'+');
+    if(c>=target)clearInterval(t);
+  },16);
+}
+let ran=false;
+const cObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting&&!ran){ran=true;
+    const a=document.getElementById('statA');
+    const p=document.getElementById('statP');
+    const b=document.getElementById('statB');
+    if(a)animCount(a,1200);if(p)animCount(p,12);if(b)animCount(b,480);
+  }});
+},{threshold:.3});
+const s=document.getElementById('offre');if(s)cObs.observe(s);
+
+/* ===== AUTH TABS ===== */
+function switchTab(tab){
+  document.querySelectorAll('.auth-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.auth-form').forEach(f=>f.classList.remove('active'));
+  const idx = tab==='signup' ? 0 : 1;
+  document.querySelectorAll('.auth-tab')[idx].classList.add('active');
+  document.getElementById(tab==='signup'?'signupForm':'loginForm').classList.add('active');
+}
+
+/* ===== TESTIMONIAL STARS ===== */
+let selectedStars = 5;
+document.querySelectorAll('#starsInput span').forEach((star,i)=>{
+  star.addEventListener('click',()=>{
+    selectedStars = parseInt(star.getAttribute('data-v'));
+    document.querySelectorAll('#starsInput span').forEach((s,j)=>{
+      s.classList.toggle('active', j<selectedStars);
+    });
+  });
+  star.addEventListener('mouseenter',()=>{
+    const v = parseInt(star.getAttribute('data-v'));
+    document.querySelectorAll('#starsInput span').forEach((s,j)=>s.style.color=j<v?'#F59E0B':'#DDD');
+  });
+  star.addEventListener('mouseleave',()=>{
+    document.querySelectorAll('#starsInput span').forEach((s,j)=>s.style.color=j<selectedStars?'#F59E0B':'#DDD');
+  });
+  if(i < selectedStars) star.classList.add('active');
+});
+
+function submitTemoignage(){
+  const nom = document.getElementById('temoNom').value.trim();
+  const msg = document.getElementById('temoMsg').value.trim();
+  if(!nom||!msg){showToast('⚠️ Merci de remplir tous les champs');return;}
+  const stars = '⭐'.repeat(selectedStars);
+  const text = `Témoignage EDUFEMME D'AFRIQ\n${stars}\n${nom} dit :\n"${msg}"`;
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,'_blank');
+  showToast('✅ Merci pour ton témoignage !');
+  document.getElementById('temoNom').value='';
+  document.getElementById('temoMsg').value='';
+}
+</script>
+</body>
+</html>
