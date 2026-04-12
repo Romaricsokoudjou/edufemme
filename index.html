@@ -442,13 +442,296 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
   .horaires-grid{grid-template-columns:1fr 1fr}
   .final-cta-btns .btn{width:100%}
 }
+
+/* ===== PRESTIGE UPGRADES ===== */
+.ico{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.ico svg{display:block}
+
+/* Refined module icons — replace emoji containers */
+.module-icon svg{width:30px;height:30px}
+.mc1 .module-icon svg{stroke:var(--orange)}
+.mc2 .module-icon svg{stroke:var(--blue)}
+.mc3 .module-icon svg{stroke:var(--green-dark)}
+
+/* Pill icons refined */
+.hero-pill svg{flex-shrink:0}
+
+/* Live badge - refined */
+.hero-live-badge svg{flex-shrink:0}
+
+/* Section CTA refined text */
+.section-cta-box p{font-size:13px;color:var(--text-muted);margin-top:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center}
+.section-cta-box p span{display:inline-flex;align-items:center;gap:4px}
+
+/* Offer detail icons */
+.offer-detail-ico svg{width:20px;height:20px}
+.offer-detail-ico{fill:rgba(255,255,255,0.9);color:rgba(255,255,255,0.9)}
+
+/* Trust cards */
+.trust-card-ico{display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.trust-card-ico svg{width:38px;height:38px;stroke:var(--blue);stroke-width:1.5;fill:none}
+.trust-card.featured .trust-card-ico svg{stroke:var(--orange)}
+
+/* Horaires flag stays as emoji — flag emojis are visual not decorative */
+/* Footer socials refined */
+.footer-soc svg{width:20px;height:20px;fill:currentColor;transition:fill .2s}
+
+/* Nav CTA refined */
+nav .nav-cta{display:inline-flex;align-items:center;gap:8px}
+
+/* Urgency refined */
+.urgency-text{display:flex;align-items:center;gap:8px}
+
+/* Module item dot - keep as styled span, remove emoji checkmark */
+.module-item-dot{font-size:0;line-height:0}
+.module-item-dot::after{content:'';display:block;width:8px;height:8px;border-radius:50%;background:currentColor}
+
+/* Checkmark list item enhanced */
+.offer-detail span{display:flex;align-items:center;gap:8px}
+
+/* Temo stars — SVG based rating */
+.temo-stars{display:flex;gap:4px}
+.temo-star svg{width:16px;height:16px;fill:#F59E0B}
+
+/* Places progress text inline icons */
+.places-progress-text span{display:flex;align-items:center;gap:5px}
+
+/* Footer links with icons */
+.footer-col a{display:flex;align-items:center;gap:8px}
+.footer-col a svg{width:14px;height:14px;fill:rgba(255,255,255,0.5);flex-shrink:0;transition:fill .2s}
+.footer-col a:hover svg{fill:var(--orange-light)}
+
+/* Auth form heading */
+.auth-form h3{display:flex;align-items:center;gap:10px}
+
+/* Final CTA inline list */
+.final-cta-meta{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:24px;flex-wrap:wrap;opacity:.75;font-size:13px}
+.final-cta-meta span{display:inline-flex;align-items:center;gap:6px}
+.final-cta-meta svg{width:14px;height:14px;fill:rgba(255,255,255,0.8)}
+
+/* Toast SVG */
+.toast{display:flex;align-items:center;gap:10px}
+
+/* Loader refined */
+.loader-logo{display:flex;align-items:center;gap:12px}
+
+/* Hero trust items */
+.hero-trust-item svg{width:15px;height:15px;stroke:var(--orange);stroke-width:2;fill:none;flex-shrink:0}
+
+/* Live notif avatar – keep as text initial (no emoji) */
+.live-notif-avatar{font-family:var(--font-head);font-size:1rem;font-weight:900;letter-spacing:.02em}
+
+/* Section cta */
+.section-cta-box .btn{gap:10px}
+
+/* Refined pill */
+.hero-pill .hero-pill-ico{display:flex;align-items:center;justify-content:center}
+.hero-pill .hero-pill-ico svg{width:16px;height:16px}
+.hero-pill-ico svg{stroke:var(--orange);stroke-width:2;fill:none}
+
+/* inspire section value icons */
+.inspire-value-ico{display:flex;align-items:center;justify-content:center;font-size:0}
+.inspire-value-ico svg{width:28px;height:28px;stroke:rgba(255,255,255,0.9);stroke-width:1.5;fill:none}
+
+/* pourqui icons */
+.pourqui-card-ico{display:flex;align-items:flex-start;margin-bottom:14px}
+.pourqui-card-ico svg{width:36px;height:36px;stroke:rgba(255,255,255,0.85);stroke-width:1.5;fill:none}
+
+/* Notif dot keep as CSS only */
+.live-notif-dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:blink 1.5s ease infinite;flex-shrink:0}
+
+/* footer socials label hidden by default, show on wide */
+.footer-soc{display:flex;align-items:center;gap:8px;padding:0 12px;border-radius:8px;width:auto;height:38px;font-size:12px;font-weight:600;color:rgba(255,255,255,.6);letter-spacing:.05em}
+.footer-soc:hover{color:var(--white)}
+
+/* Prestige separator */
+.prestige-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--orange),transparent);margin:0;opacity:.3}
+
+/* Zoom logo — text badge refined */
+.zoom-logo{background:rgba(255,255,255,0.15);border-radius:8px;padding:6px 14px;font-size:13px;font-weight:800;color:var(--white);display:inline-flex;align-items:center;gap:6px}
+.zoom-logo svg{width:16px;height:16px;fill:rgba(255,255,255,0.85)}
+
 </style>
 </head>
 <body>
 
+<!-- ===== SVG ICON SPRITE ===== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <!-- WhatsApp -->
+  <symbol id="ico-wa" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </symbol>
+  <!-- TikTok -->
+  <symbol id="ico-tiktok" viewBox="0 0 24 24">
+    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34v-7.1a8.16 8.16 0 004.77 1.52V6.31a4.85 4.85 0 01-1-.38z"/>
+  </symbol>
+  <!-- Facebook -->
+  <symbol id="ico-fb" viewBox="0 0 24 24">
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  </symbol>
+  <!-- Zoom -->
+  <symbol id="ico-zoom" viewBox="0 0 24 24">
+    <path d="M4.5 4A2.5 2.5 0 002 6.5v11A2.5 2.5 0 004.5 20h10a2.5 2.5 0 002.5-2.5v-2.25l4.5 2.25V6.5L17 8.75V6.5A2.5 2.5 0 0014.5 4z"/>
+  </symbol>
+  <!-- Check / Validate -->
+  <symbol id="ico-check" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" fill="none" stroke="currentColor"/>
+  </symbol>
+  <!-- Star -->
+  <symbol id="ico-star" viewBox="0 0 24 24">
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/>
+  </symbol>
+  <!-- Shield (sécurité) -->
+  <symbol id="ico-shield" viewBox="0 0 24 24">
+    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/>
+  </symbol>
+  <!-- Clock -->
+  <symbol id="ico-clock" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path stroke-linecap="round" d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Calendar -->
+  <symbol id="ico-cal" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Package / import -->
+  <symbol id="ico-pkg" viewBox="0 0 24 24">
+    <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <polyline points="3.27 6.96 12 12.01 20.73 6.96" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Cart / sell -->
+  <symbol id="ico-cart" viewBox="0 0 24 24">
+    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/>
+    <path d="M16 10a4 4 0 01-8 0" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Globe / website -->
+  <symbol id="ico-globe" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- User / person -->
+  <symbol id="ico-user" viewBox="0 0 24 24">
+    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Award / certificate -->
+  <symbol id="ico-award" viewBox="0 0 24 24">
+    <circle cx="12" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- Lightning / fast -->
+  <symbol id="ico-zap" viewBox="0 0 24 24">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+  </symbol>
+  <!-- Map pin -->
+  <symbol id="ico-pin" viewBox="0 0 24 24">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Book -->
+  <symbol id="ico-book" viewBox="0 0 24 24">
+    <path d="M4 19.5A2.5 2.5 0 016.5 17H20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Group / community -->
+  <symbol id="ico-group" viewBox="0 0 24 24">
+    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <!-- Money / wallet -->
+  <symbol id="ico-money" viewBox="0 0 24 24">
+    <rect x="2" y="5" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M16 10a2 2 0 110 4 2 2 0 010-4z" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Crown -->
+  <symbol id="ico-crown" viewBox="0 0 24 24">
+    <path d="M3 17l2-8 4 4 3-8 3 8 4-4 2 8H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- Rocket -->
+  <symbol id="ico-rocket" viewBox="0 0 24 24">
+    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2l3-3-6-6-3 3 3 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M12 15l-3-3a22 22 0 002-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M9 12H4s.55-3.03 2-4h5l-2 4zM15 9v5s3.03-.55 4-2v-5l-4 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- Home -->
+  <symbol id="ico-home" viewBox="0 0 24 24">
+    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <polyline points="9 22 9 12 15 12 15 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- Briefcase -->
+  <symbol id="ico-brief" viewBox="0 0 24 24">
+    <rect x="2" y="7" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <line x1="12" y1="12" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M2 12h20" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Camera / live -->
+  <symbol id="ico-cam" viewBox="0 0 24 24">
+    <path d="M23 7l-7 5 7 5V7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="1" y="5" width="15" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Lock -->
+  <symbol id="ico-lock" viewBox="0 0 24 24">
+    <rect x="3" y="11" width="18" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M7 11V7a5 5 0 0110 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <!-- Alert / fire / urgency -->
+  <symbol id="ico-alert" viewBox="0 0 24 24">
+    <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- Label / tag -->
+  <symbol id="ico-tag" viewBox="0 0 24 24">
+    <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <line x1="7" y1="7" x2="7.01" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <!-- Credit card / payment -->
+  <symbol id="ico-card" viewBox="0 0 24 24">
+    <rect x="1" y="4" width="22" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="1" y1="10" x2="23" y2="10" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- Send / message -->
+  <symbol id="ico-send" viewBox="0 0 24 24">
+    <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="22 2 15 22 11 13 2 9 22 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- Bell / notification -->
+  <symbol id="ico-bell" viewBox="0 0 24 24">
+    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M13.73 21a2 2 0 01-3.46 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <!-- Live dot indicator (SVG based) -->
+  <symbol id="ico-live" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="4" fill="currentColor"/>
+    <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+    <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  </symbol>
+  <!-- Trending up -->
+  <symbol id="ico-trend" viewBox="0 0 24 24">
+    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="17 6 23 6 23 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- World / Afrique -->
+  <symbol id="ico-africa" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M9 2.5C9 5 10 6 9 8s-3 3-3 5 2 4 2 6M15 2.5c0 2.5-1 3 0 5s2 3 2 5-1 3-1 4" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+  </symbol>
+  <!-- Key -->
+  <symbol id="ico-key" viewBox="0 0 24 24">
+    <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
+
 <!-- ===== LOADER ===== -->
 <div class="loader" id="loader">
-  <div class="loader-logo">EDUFEMME<span>'D'AFRIQ</span></div>
+  <div class="loader-logo">EDUFEMME<span>D'AFRIQ</span></div>
   <div class="loader-spinner"></div>
   <div class="loader-bar"><div class="loader-bar-fill"></div></div>
   <div class="loader-text">Chargement de ta formation...</div>
@@ -463,7 +746,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
 
 <!-- ===== FLOATING WA ===== -->
 <a class="float-wa" href="https://wa.me/18674670693?text=Bonjour%2C%20j%27ai%20un%20probl%C3%A8me%20de%20paiement%20pour%20la%20formation%20EDUFEMME%20D%27AFRIQ" target="_blank" rel="noopener" title="Problème de paiement ? Contactez-nous sur WhatsApp" aria-label="WhatsApp Support">
-  <span class="float-wa-label">💳 Problème de paiement ? Écris-nous</span>
+  <span class="float-wa-label">Problème de paiement ? Écris-nous</span>
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
   </svg>
@@ -498,7 +781,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
     <a class="nav-link" href="#temoignages">Témoignages</a>
     <a class="nav-link" href="#auth">Compte</a>
   </div>
-  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o nav-cta btn-pulse-o" style="text-decoration:none">🎓 S'inscrire maintenant</a>
+  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o nav-cta btn-pulse-o" style="text-decoration:none"><svg width="16" height="16" aria-hidden="true"><use href="#ico-zap"/></svg> S'inscrire maintenant</a>
   <button class="hamburger" id="hamburger" onclick="toggleMob()" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -510,7 +793,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
   <a href="#offre" onclick="toggleMob()">L'Offre</a>
   <a href="#temoignages" onclick="toggleMob()">Témoignages</a>
   <a href="#auth" onclick="toggleMob()">Mon Compte</a>
-  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-lg btn-pulse-g" style="text-decoration:none">✅ S'inscrire — 4 960 FCFA</a>
+  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-lg btn-pulse-g" style="text-decoration:none"><svg width="16" height="16" aria-hidden="true"><use href="#ico-check"/></svg> S'inscrire — 4 960 FCFA</a>
 </div>
 
 <!-- ===== HERO ===== -->
@@ -523,27 +806,27 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
       </div>
       <div class="hero-live-badge">
         <div class="live-dot"></div>
-        <span>🎥 FORMATION LIVE sur Zoom · Lun–Ven 20h–22h (Cameroun)</span>
+        <svg width="16" height="16" aria-hidden="true"><use href="#ico-cam"/></svg><span>FORMATION LIVE sur Zoom · Lun–Ven 20h–22h (Cameroun)</span>
       </div>
       <h1>Transforme ton Téléphone en<br><span class="ao">Machine à Revenus</span><br>en <span class="ab">7 jours</span></h1>
       <p class="hero-sub">La formation intensive LIVE qui te donne les vraies compétences du commerce numérique africain : importer depuis la Chine, vendre en ligne et créer ton propre site web — sans coder.</p>
       <div class="hero-offer-box">
         <div>
-          <div style="font-size:13px;color:var(--text-muted);text-decoration:line-through;font-weight:600">❌ 99 000 FCFA (177,11 USD)</div>
-          <div class="hero-price">✅ 4 960 FCFA</div>
+          <div style="font-size:13px;color:var(--text-muted);text-decoration:line-through;font-weight:600">99 000 FCFA (177,11 USD)</div>
+          <div class="hero-price"><svg width="18" height="18" aria-hidden="true"><use href="#ico-check"/></svg> 4 960 FCFA</div>
           <div style="font-size:12px;color:var(--text-muted)">= 8,95 USD seulement</div>
         </div>
-        <div class="hero-badge2" style="padding:8px 14px;font-size:12px">🔥 −97%<br>PROMO</div>
+        <div class="hero-badge2" style="padding:8px 14px;font-size:12px">−97%<br>PROMO</div>
       </div>
       <div class="hero-ctas">
-        <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">✅ S'inscrire maintenant</a>
+        <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none"><svg width="18" height="18" aria-hidden="true"><use href="#ico-check"/></svg> S'inscrire maintenant</a>
         <a class="btn btn-ob" href="#programme">Voir le programme</a>
       </div>
       <div class="hero-trust">
-        <div class="hero-trust-item">📅 Démarre le 20 avril 2026</div>
-        <div class="hero-trust-item">🎥 LIVE Zoom · 20h–22h</div>
-        <div class="hero-trust-item">🌍 Toute l'Afrique</div>
-        <div class="hero-trust-item">🔒 Paiement sécurisé</div>
+        <div class="hero-trust-item"><svg width="15" height="15" aria-hidden="true"><use href="#ico-cal"/></svg> Démarre le 20 avril 2026</div>
+        <div class="hero-trust-item"><svg width="15" height="15" aria-hidden="true"><use href="#ico-cam"/></svg> LIVE Zoom · 20h–22h</div>
+        <div class="hero-trust-item"><svg width="15" height="15" aria-hidden="true"><use href="#ico-africa"/></svg> Toute l'Afrique</div>
+        <div class="hero-trust-item"><svg width="15" height="15" aria-hidden="true"><use href="#ico-lock"/></svg> Paiement sécurisé</div>
       </div>
     </div>
     <div class="hero-visual">
@@ -553,16 +836,16 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
 </div>
         <span class="hero-visual-emoji"></span>
       </div>
-      <div class="hero-pill hero-pill-1"><span class="hero-pill-ico">📦</span> Import Chine</div>
-      <div class="hero-pill hero-pill-2"><span class="hero-pill-ico">🛒</span> Vente en ligne</div>
-      <div class="hero-pill hero-pill-3"><span class="hero-pill-ico">🌐</span> Site IA</div>
+      <div class="hero-pill hero-pill-1"><span class="hero-pill-ico"><svg width="16" height="16" aria-hidden="true"><use href="#ico-pkg"/></svg></span> Import Chine</div>
+      <div class="hero-pill hero-pill-2"><span class="hero-pill-ico"><svg width="16" height="16" aria-hidden="true"><use href="#ico-cart"/></svg></span> Vente en ligne</div>
+      <div class="hero-pill hero-pill-3"><span class="hero-pill-ico"><svg width="16" height="16" aria-hidden="true"><use href="#ico-globe"/></svg></span> Site IA</div>
     </div>
   </div>
 </section>
 
 <!-- ===== URGENCY ===== -->
 <div class="urgency-banner">
-  <span class="urgency-text">🔥 Offre promotionnelle — Places limitées ! Se termine dans :</span>
+  <span class="urgency-text"><svg width="16" height="16" aria-hidden="true"><use href="#ico-alert"/></svg> Offre promotionnelle — Places limitées ! Se termine dans :</span>
   <div class="urgency-timer">
     <div class="timer-block" id="th">47</div>
     <span class="timer-sep">:</span>
@@ -570,20 +853,20 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
     <span class="timer-sep">:</span>
     <div class="timer-block" id="ts">47</div>
   </div>
-  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="urgency-btn" style="text-decoration:none">✅ Rejoindre la formation →</a>
+  <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="urgency-btn" style="text-decoration:none"><svg width="15" height="15" aria-hidden="true"><use href="#ico-check"/></svg> Rejoindre la formation →</a>
 </div>
 
 <!-- ===== PRIX ULTRA VISIBLE ===== -->
 <div class="prix-hero">
   <div class="prix-inner">
-    <div class="prix-promo-badge">🏷️ Offre promotionnelle limitée</div>
-    <div class="prix-old">❌ 99 000 FCFA (177,11 USD)</div>
-    <div class="prix-new">✅ 4 960 <span class="prix-fcfa">FCFA</span></div>
+    <div class="prix-promo-badge"><svg width="14" height="14" aria-hidden="true"><use href="#ico-tag"/></svg> Offre promotionnelle limitée</div>
+    <div class="prix-old">99 000 FCFA (177,11 USD)</div>
+    <div class="prix-new"><svg width="32" height="32" aria-hidden="true"><use href="#ico-check"/></svg> 4 960 <span class="prix-fcfa">FCFA</span></div>
     <div class="prix-usd">soit seulement 8,95 USD — Accès complet à la formation LIVE</div>
     <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="prix-cta-btn" style="display:inline-block;text-decoration:none;color:white;margin-top:24px">
-      🎓 Rejoindre la Formation — Payer Maintenant
+      Rejoindre la Formation — Payer Maintenant
     </a>
-    <div style="margin-top:16px;color:rgba(255,255,255,0.6);font-size:13px">🔒 Paiement sécurisé · 💬 Support WhatsApp · ✅ Accès immédiat</div>
+    <div style="margin-top:16px;color:rgba(255,255,255,0.6);font-size:13px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap"><svg width="13" height="13" aria-hidden="true"><use href="#ico-lock"/></svg> Paiement sécurisé <span>·</span> <svg width="13" height="13" aria-hidden="true"><use href="#ico-wa"/></svg> Support WhatsApp <span>·</span> <svg width="13" height="13" aria-hidden="true"><use href="#ico-check"/></svg> Accès immédiat</div>
   </div>
 </div>
 
@@ -604,15 +887,15 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
         <div class="places-progress-fill" id="placesBar" style="width:74.2%"></div>
       </div>
       <div class="places-progress-text">
-        <span>🟢 258 inscrites</span>
+        <span><svg width="12" height="12" aria-hidden="true"><use href="#ico-check"/></svg> 258 inscrites</span>
         <span>742 places restantes</span>
       </div>
     </div>
     <div class="places-cta reveal">
       <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-xl btn-pulse-o" style="text-decoration:none">
-        🔥 Réserver ma Place Maintenant
+        Réserver ma Place Maintenant
       </a>
-      <p style="margin-top:12px;font-size:13px;color:var(--text-muted)">⚠️ Une place réservée = une participante inscrite. N'attend pas !</p>
+      <p style="margin-top:12px;font-size:13px;color:var(--text-muted)">Une place réservée = une participante inscrite. N'attend pas !</p>
     </div>
   </div>
 </div>
@@ -629,48 +912,48 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
     <div class="modules-grid">
       <div class="module-card mc1 reveal">
         <div class="module-number">01</div>
-        <div class="module-icon">📦</div>
+        <div class="module-icon"><svg width="30" height="30" aria-hidden="true"><use href="#ico-pkg"/></svg></div>
         <span class="module-tag">Module 1 · Jours 1-2</span>
         <h3>Importation Chine-Afrique</h3>
         <p>Apprends à sourcer des produits de qualité sur Alibaba & AliExpress, les faire livrer en Afrique et dégager des marges attractives.</p>
         <div class="module-items">
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Trouver les meilleurs fournisseurs chinois</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Négocier les prix et minimums de commande</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Gérer la logistique et les douanes africaines</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Calcul des marges et protection contre les arnaques</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Trouver les meilleurs fournisseurs chinois</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Négocier les prix et minimums de commande</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Gérer la logistique et les douanes africaines</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Calcul des marges et protection contre les arnaques</span></div>
         </div>
       </div>
       <div class="module-card mc2 reveal d1">
         <div class="module-number">02</div>
-        <div class="module-icon">🛒</div>
+        <div class="module-icon"><svg width="30" height="30" aria-hidden="true"><use href="#ico-cart"/></svg></div>
         <span class="module-tag">Module 2 · Jours 3-5</span>
         <h3>Vente en Ligne</h3>
         <p>Maîtrise les stratégies de vente digitale sur WhatsApp Business, Facebook, Instagram et TikTok pour générer des revenus réguliers.</p>
         <div class="module-items">
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Construire une boutique WhatsApp qui convertit</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Créer des publications qui vendent sur les réseaux</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Techniques de closing et fidélisation client</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Publicité payante à petit budget (Facebook Ads)</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Construire une boutique WhatsApp qui convertit</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Créer des publications qui vendent sur les réseaux</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Techniques de closing et fidélisation client</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Publicité payante à petit budget (Facebook Ads)</span></div>
         </div>
       </div>
       <div class="module-card mc3 reveal d2">
         <div class="module-number">03</div>
-        <div class="module-icon">🌐</div>
+        <div class="module-icon"><svg width="30" height="30" aria-hidden="true"><use href="#ico-globe"/></svg></div>
         <span class="module-tag">Module 3 · Jours 6-7</span>
         <h3>Création de Site Web par IA</h3>
         <p>Crée ton propre site e-commerce professionnel en moins de 2h grâce à l'intelligence artificielle, même si tu n'as jamais codé.</p>
         <div class="module-items">
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Utiliser les outils IA (ChatGPT, Wix, Shopify AI)</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Design professionnel sans compétences techniques</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Intégrer les paiements mobile money (MTN, Orange)</span></div>
-          <div class="module-item"><div class="module-item-dot">✓</div><span>Référencement local pour être visible sur Google</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Utiliser les outils IA (ChatGPT, Wix, Shopify AI)</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Design professionnel sans compétences techniques</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Intégrer les paiements mobile money (MTN, Orange)</span></div>
+          <div class="module-item"><div class="module-item-dot"></div><span>Référencement local pour être visible sur Google</span></div>
         </div>
       </div>
     </div>
     <div class="section-cta reveal d3">
       <div class="section-cta-box">
-        <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">🎓 Rejoindre la Formation — 4 960 FCFA</a>
-        <p>✅ Accès immédiat · 🎥 LIVE Zoom · 💬 Support WhatsApp · 🏆 Attestation incluse</p>
+        <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none"><svg width="18" height="18" aria-hidden="true"><use href="#ico-zap"/></svg> Rejoindre la Formation — 4 960 FCFA</a>
+        <p><span><svg width="13" height="13" aria-hidden="true"><use href="#ico-check"/></svg> Accès immédiat</span><span><svg width="13" height="13" aria-hidden="true"><use href="#ico-cam"/></svg> LIVE Zoom</span><span><svg width="13" height="13" aria-hidden="true"><use href="#ico-wa"/></svg> Support WhatsApp</span><span><svg width="13" height="13" aria-hidden="true"><use href="#ico-award"/></svg> Attestation incluse</span></p>
       </div>
     </div>
   </div>
@@ -687,8 +970,8 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
     </div>
     <div class="horaires-live-banner reveal">
       <div class="horaires-live-dot"></div>
-      <div class="horaires-live-text">🎥 Formation LIVE sur Zoom · Lundi au Vendredi · Durée : 2h par soir</div>
-      <div class="zoom-logo">📹 ZOOM</div>
+      <div class="horaires-live-text"><svg width="16" height="16" aria-hidden="true"><use href="#ico-cam"/></svg> Formation LIVE sur Zoom · Lundi au Vendredi · Durée : 2h par soir</div>
+      <div class="zoom-logo"><svg width="16" height="16" aria-hidden="true"><use href="#ico-zoom"/></svg> ZOOM</div>
     </div>
     <div class="horaires-grid">
       <div class="horaire-card reveal">
@@ -734,7 +1017,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
         <div class="horaire-zoom">Heure locale (Kinshasa)</div>
       </div>
       <div class="horaire-card reveal d3" style="background:rgba(255,255,255,0.12);border-color:var(--orange-light)">
-        <div class="horaire-flag">🌍</div>
+        <div class="horaire-flag"></div>
         <div class="horaire-pays">Autre pays ?</div>
         <div class="horaire-heure" style="font-size:1rem">Contacte-nous</div>
         <div class="horaire-zoom">WhatsApp disponible</div>
@@ -742,7 +1025,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
     </div>
     <div style="text-align:center;margin-top:36px" class="reveal">
       <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-lg btn-pulse-o" style="text-decoration:none">
-        📅 Réserver ma Place LIVE
+        Réserver ma Place LIVE
       </a>
     </div>
   </div>
@@ -756,10 +1039,10 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
       <h2>Quand <strong>Commence</strong> la Formation ?</h2>
     </div>
     <div class="next-session-box reveal">
-      <div class="next-session-label">🗓️ Prochaine session disponible</div>
+      <div class="next-session-label"><svg width="13" height="13" aria-hidden="true"><use href="#ico-cal"/></svg> Prochaine session disponible</div>
       <div class="next-session-date" id="nextSessionDate">Lundi 20 avril 2026</div>
       <div class="next-session-desc">Formation de 7 jours · Du lundi au vendredi · Sur Zoom</div>
-      <div class="session-detail">📅 Lun–Ven · ⏰ 20h–22h (Cameroun) · 📹 Zoom LIVE</div>
+      <div class="session-detail"><svg width="14" height="14" aria-hidden="true"><use href="#ico-cal"/></svg> Lun–Ven · <svg width="14" height="14" aria-hidden="true"><use href="#ico-clock"/></svg> 20h–22h (Cameroun) · <svg width="14" height="14" aria-hidden="true"><use href="#ico-cam"/></svg> Zoom LIVE</div>
     </div>
     <div class="reveal">
       <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">
@@ -782,33 +1065,33 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
       <div class="offer-block reveal">
         <div class="offer-block-content">
           <span class="offer-eyebrow">Formation Complète · Édition Limitée</span>
-          <div class="offer-promo-banner">🏷️ Offre promotionnelle limitée</div>
+          <div class="offer-promo-banner"><svg width="14" height="14" aria-hidden="true"><use href="#ico-tag"/></svg> Offre promotionnelle limitée</div>
           <div class="offer-price-row">
-            <div class="offer-price-crossed">❌ 99 000 FCFA <small>(177,11 USD)</small></div>
+            <div class="offer-price-crossed">99 000 FCFA <small>(177,11 USD)</small></div>
             <div class="offer-price-new">4 960 <small>FCFA</small></div>
-            <div class="offer-price-usd">✅ soit seulement 8,95 USD</div>
+            <div class="offer-price-usd"><svg width="14" height="14" aria-hidden="true"><use href="#ico-check"/></svg> soit seulement 8,95 USD</div>
           </div>
-          <div class="offer-savings">🎉 Tu économises 95 500 FCFA (−97%)</div>
+          <div class="offer-savings"><svg width="14" height="14" aria-hidden="true"><use href="#ico-trend"/></svg> Tu économises 95 500 FCFA (−97%)</div>
           <div class="offer-details">
-            <div class="offer-detail"><div class="offer-detail-ico">🎥</div><span><strong>Formation LIVE</strong> sur Zoom · Lun–Ven 20h–22h</span></div>
-            <div class="offer-detail"><div class="offer-detail-ico">📅</div><span><strong>7 jours</strong> de formation intensive en direct</span></div>
-            <div class="offer-detail"><div class="offer-detail-ico">⏱</div><span><strong>14 heures</strong> de cours au total</span></div>
-            <div class="offer-detail"><div class="offer-detail-ico">📚</div><span><strong>3 modules</strong> : Import · Vente · Site Web IA</span></div>
-            <div class="offer-detail"><div class="offer-detail-ico">💬</div><span><strong>Accès WhatsApp</strong> au groupe de suivi exclusif</span></div>
-            <div class="offer-detail"><div class="offer-detail-ico">🏆</div><span><strong>Attestation</strong> numérique de fin de formation</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico"><svg width="20" height="20" aria-hidden="true"><use href="#ico-cam"/></svg></div><span><strong>Formation LIVE</strong> sur Zoom · Lun–Ven 20h–22h</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico"><svg width="20" height="20" aria-hidden="true"><use href="#ico-cal"/></svg></div><span><strong>7 jours</strong> de formation intensive en direct</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico"><svg width="20" height="20" aria-hidden="true"><use href="#ico-clock"/></svg></div><span><strong>14 heures</strong> de cours au total</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico"><svg width="20" height="20" aria-hidden="true"><use href="#ico-book"/></svg></div><span><strong>3 modules</strong> : Import · Vente · Site Web IA</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico"><svg width="20" height="20" aria-hidden="true"><use href="#ico-wa"/></svg></div><span><strong>Accès WhatsApp</strong> au groupe de suivi exclusif</span></div>
+            <div class="offer-detail"><div class="offer-detail-ico"><svg width="20" height="20" aria-hidden="true"><use href="#ico-award"/></svg></div><span><strong>Attestation</strong> numérique de fin de formation</span></div>
           </div>
           <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="offer-btn-green" style="text-decoration:none;display:flex;align-items:center;justify-content:center;gap:10px">
-            ✅ S'inscrire maintenant — 4 960 FCFA
+            S'inscrire maintenant — 4 960 FCFA
           </a>
         </div>
       </div>
       <div class="reveal d1">
         <div class="trust-grid">
-          <div class="trust-card"><div class="trust-card-ico">👩🏾‍💻</div><span class="trust-card-val" id="statA">0</span><span class="trust-card-lbl">Femmes formées</span></div>
-          <div class="trust-card"><div class="trust-card-ico">🌍</div><span class="trust-card-val" id="statP">0</span><span class="trust-card-lbl">Pays africains</span></div>
-          <div class="trust-card"><div class="trust-card-ico">⭐</div><span class="trust-card-val">4.9</span><span class="trust-card-lbl">Note moyenne</span></div>
-          <div class="trust-card"><div class="trust-card-ico">💼</div><span class="trust-card-val" id="statB">0</span><span class="trust-card-lbl">Business lancés</span></div>
-          <div class="trust-card featured"><div class="trust-card-ico">🔒</div><div><span class="trust-card-val">100%</span><span class="trust-card-lbl">Satisfaites ou remboursées sous 48h</span></div></div>
+          <div class="trust-card"><div class="trust-card-ico"><svg width="38" height="38" aria-hidden="true"><use href="#ico-group"/></svg></div><span class="trust-card-val" id="statA">0</span><span class="trust-card-lbl">Femmes formées</span></div>
+          <div class="trust-card"><div class="trust-card-ico"><svg width="38" height="38" aria-hidden="true"><use href="#ico-africa"/></svg></div><span class="trust-card-val" id="statP">0</span><span class="trust-card-lbl">Pays africains</span></div>
+          <div class="trust-card"><div class="trust-card-ico"><svg width="38" height="38" aria-hidden="true"><use href="#ico-star"/></svg></div><span class="trust-card-val">4.9</span><span class="trust-card-lbl">Note moyenne</span></div>
+          <div class="trust-card"><div class="trust-card-ico"><svg width="38" height="38" aria-hidden="true"><use href="#ico-brief"/></svg></div><span class="trust-card-val" id="statB">0</span><span class="trust-card-lbl">Business lancés</span></div>
+          <div class="trust-card featured"><div class="trust-card-ico"><svg width="38" height="38" aria-hidden="true"><use href="#ico-shield"/></svg></div><div><span class="trust-card-val">100%</span><span class="trust-card-lbl">Satisfaites ou remboursées sous 48h</span></div></div>
         </div>
       </div>
     </div>
@@ -819,10 +1102,10 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
 <section class="inspire">
   <div class="inspire-inner">
     <div class="inspire-visual reveal">
-      <div class="inspire-visual-bg">
-        👩🏾‍💼
+      <div class="inspire-visual-bg" style="background:linear-gradient(135deg,var(--orange) 0%,#FF6D00 40%,var(--blue) 100%);display:flex;align-items:center;justify-content:center;">
+        <svg width="120" height="120" viewBox="0 0 24 24" style="opacity:.25;stroke:white;stroke-width:1;fill:none"><use href="#ico-user"/></svg>
         <div class="inspire-visual-overlay"></div>
-        <div class="inspire-visual-text">La liberté financière commence ici </div>
+        <div class="inspire-visual-text">La liberté financière commence ici</div>
       </div>
     </div>
     <div class="inspire-content reveal d1">
@@ -830,21 +1113,21 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
       <h2 class="inspire-title">Deviens la Femme<br>que tu <em>Mérites d'Être</em></h2>
       <div class="inspire-values">
         <div class="inspire-value">
-          <div class="inspire-value-ico">💰</div>
+          <div class="inspire-value-ico"><svg width="28" height="28" aria-hidden="true"><use href="#ico-money"/></svg></div>
           <div class="inspire-value-text">
             <h4>Liberté Financière</h4>
             <p>Génère tes propres revenus depuis ton téléphone. Tu n'as plus besoin d'attendre un salaire ou un mari pour vivre dignement.</p>
           </div>
         </div>
         <div class="inspire-value">
-          <div class="inspire-value-ico">👑</div>
+          <div class="inspire-value-ico"><svg width="28" height="28" aria-hidden="true"><use href="#ico-crown"/></svg></div>
           <div class="inspire-value-text">
             <h4>Indépendance</h4>
             <p>Construis un business 100% à toi. Fixe tes propres horaires, travaille depuis chez toi, sois ta propre patronne.</p>
           </div>
         </div>
         <div class="inspire-value">
-          <div class="inspire-value-ico">🚀</div>
+          <div class="inspire-value-ico"><svg width="28" height="28" aria-hidden="true"><use href="#ico-rocket"/></svg></div>
           <div class="inspire-value-text">
             <h4>Réussite & Épanouissement</h4>
             <p>Des femmes comme toi ont déjà transformé leur vie. Dans 7 jours, tu seras sur le même chemin vers le succès.</p>
@@ -852,7 +1135,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
         </div>
       </div>
       <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">
-        🌟 Je veux ma Liberté Financière
+        Je veux ma Liberté Financière
       </a>
     </div>
   </div>
@@ -868,15 +1151,15 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
       <p>Peu importe ton point de départ, si tu as un téléphone et la volonté d'avancer, cette formation est pour toi.</p>
     </div>
     <div class="pourqui-grid">
-      <div class="pourqui-card reveal"><div class="pourqui-card-ico">🏠</div><h3>Maman au foyer</h3><p>Tu veux générer un revenu depuis chez toi sans sacrifier ta famille. Cette formation s'adapte à ton emploi du temps.</p></div>
-      <div class="pourqui-card reveal d1"><div class="pourqui-card-ico">🎓</div><h3>Étudiante ambitieuse</h3><p>Tu veux financer tes études et acquérir des compétences concrètes que les diplômes n'enseignent pas.</p></div>
-      <div class="pourqui-card reveal d2"><div class="pourqui-card-ico">💼</div><h3>Salariée sous-payée</h3><p>Tu veux créer une source de revenus complémentaire et préparer ton indépendance financière.</p></div>
-      <div class="pourqui-card reveal d3"><div class="pourqui-card-ico">🛒</div><h3>Commerçante débutante</h3><p>Tu vends déjà mais tu veux aller plus loin en ligne. Cette formation va professionnaliser ton approche.</p></div>
-      <div class="pourqui-card reveal d1"><div class="pourqui-card-ico">🌐</div><h3>Diaspora africaine</h3><p>Tu veux créer un lien commercial avec l'Afrique, importer ou exporter intelligemment depuis l'étranger.</p></div>
-      <div class="pourqui-card reveal d2"><div class="pourqui-card-ico">🚀</div><h3>Entrepreneuse en herbe</h3><p>Tu as une idée de business mais tu ne sais pas par où commencer. Ces 7 jours te donnent le plan d'action complet.</p></div>
+      <div class="pourqui-card reveal"><div class="pourqui-card-ico"><svg width="36" height="36" aria-hidden="true"><use href="#ico-home"/></svg></div><h3>Maman au foyer</h3><p>Tu veux générer un revenu depuis chez toi sans sacrifier ta famille. Cette formation s'adapte à ton emploi du temps.</p></div>
+      <div class="pourqui-card reveal d1"><div class="pourqui-card-ico"><svg width="36" height="36" aria-hidden="true"><use href="#ico-award"/></svg></div><h3>Étudiante ambitieuse</h3><p>Tu veux financer tes études et acquérir des compétences concrètes que les diplômes n'enseignent pas.</p></div>
+      <div class="pourqui-card reveal d2"><div class="pourqui-card-ico"><svg width="36" height="36" aria-hidden="true"><use href="#ico-brief"/></svg></div><h3>Salariée sous-payée</h3><p>Tu veux créer une source de revenus complémentaire et préparer ton indépendance financière.</p></div>
+      <div class="pourqui-card reveal d3"><div class="pourqui-card-ico"><svg width="36" height="36" aria-hidden="true"><use href="#ico-cart"/></svg></div><h3>Commerçante débutante</h3><p>Tu vends déjà mais tu veux aller plus loin en ligne. Cette formation va professionnaliser ton approche.</p></div>
+      <div class="pourqui-card reveal d1"><div class="pourqui-card-ico"><svg width="36" height="36" aria-hidden="true"><use href="#ico-globe"/></svg></div><h3>Diaspora africaine</h3><p>Tu veux créer un lien commercial avec l'Afrique, importer ou exporter intelligemment depuis l'étranger.</p></div>
+      <div class="pourqui-card reveal d2"><div class="pourqui-card-ico"><svg width="36" height="36" aria-hidden="true"><use href="#ico-rocket"/></svg></div><h3>Entrepreneuse en herbe</h3><p>Tu as une idée de business mais tu ne sais pas par où commencer. Ces 7 jours te donnent le plan d'action complet.</p></div>
     </div>
     <div style="text-align:center;margin-top:48px" class="reveal">
-      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-lg btn-pulse-o" style="text-decoration:none">✅ C'est fait pour moi — S'inscrire maintenant</a>
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-lg btn-pulse-o" style="text-decoration:none"><svg width="18" height="18" aria-hidden="true"><use href="#ico-check"/></svg> C'est fait pour moi — S'inscrire maintenant</a>
     </div>
   </div>
 </section>
@@ -893,42 +1176,42 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
     <div class="temoignages-grid">
       <div class="temo-card reveal">
         <div class="temo-quote">"</div>
-        <div class="temo-stars">⭐⭐⭐⭐⭐</div>
+        <div class="temo-stars"><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg></div>
         <p class="temo-text">En 7 jours j'ai appris à importer depuis la Chine et j'ai revendu ma première commande avec 40% de marge. Un investissement de 4960 FCFA qui m'a rapporté 85 000 FCFA en 3 semaines !</p>
-        <div class="temo-author"><div class="temo-avatar" style="background:var(--orange)">A</div><div><span class="temo-name">Amina K.</span><span class="temo-loc">📍 Abidjan, Côte d'Ivoire</span></div></div>
+        <div class="temo-author"><div class="temo-avatar" style="background:var(--orange)">A</div><div><span class="temo-name">Amina K.</span><span class="temo-loc"><svg width="12" height="12" aria-hidden="true"><use href="#ico-pin"/></svg> Abidjan, Côte d'Ivoire</span></div></div>
       </div>
       <div class="temo-card reveal d1">
         <div class="temo-quote">"</div>
-        <div class="temo-stars">⭐⭐⭐⭐⭐</div>
+        <div class="temo-stars"><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg></div>
         <p class="temo-text">Je n'y croyais pas au départ. Aujourd'hui j'ai mon propre site e-commerce créé avec l'IA et je vends des perruques en ligne. Mes clientes me trouvent sur Google ! Merci EDUFEMME !</p>
-        <div class="temo-author"><div class="temo-avatar" style="background:var(--blue)">G</div><div><span class="temo-name">Grâce M.</span><span class="temo-loc">📍 Douala, Cameroun</span></div></div>
+        <div class="temo-author"><div class="temo-avatar" style="background:var(--blue)">G</div><div><span class="temo-name">Grâce M.</span><span class="temo-loc"><svg width="12" height="12" aria-hidden="true"><use href="#ico-pin"/></svg> Douala, Cameroun</span></div></div>
       </div>
       <div class="temo-card reveal d2">
         <div class="temo-quote">"</div>
-        <div class="temo-stars">⭐⭐⭐⭐⭐</div>
+        <div class="temo-stars"><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg><svg width="16" height="16" aria-hidden="true"><use href="#ico-star"/></svg></div>
         <p class="temo-text">La formation sur la vente en ligne a changé ma vie. J'ai désormais un groupe WhatsApp actif avec +200 clients. Mon chiffre d'affaires mensuel a triplé depuis la formation.</p>
-        <div class="temo-author"><div class="temo-avatar" style="background:linear-gradient(135deg,var(--orange),var(--blue))">F</div><div><span class="temo-name">Fatou D.</span><span class="temo-loc">📍 Dakar, Sénégal</span></div></div>
+        <div class="temo-author"><div class="temo-avatar" style="background:linear-gradient(135deg,var(--orange),var(--blue))">F</div><div><span class="temo-name">Fatou D.</span><span class="temo-loc"><svg width="12" height="12" aria-hidden="true"><use href="#ico-pin"/></svg> Dakar, Sénégal</span></div></div>
       </div>
     </div>
 
     <!-- Testimonial Form -->
     <div class="temo-form-wrap reveal">
-      <div class="temo-form-title">✍️ Partage ton Expérience</div>
+      <div class="temo-form-title"><svg width="18" height="18" aria-hidden="true"><use href="#ico-send"/></svg> Partage ton Expérience</div>
       <div class="temo-form">
         <input class="temo-input" type="text" id="temoNom" placeholder="Ton prénom et pays (ex : Aïcha, Dakar)">
         <div>
           <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px">Donne une note :</div>
           <div class="temo-stars-input" id="starsInput">
-            <span data-v="1">⭐</span><span data-v="2">⭐</span><span data-v="3">⭐</span><span data-v="4">⭐</span><span data-v="5">⭐</span>
+            <span data-v="1">&#9733;</span><span data-v="2">&#9733;</span><span data-v="3">&#9733;</span><span data-v="4">&#9733;</span><span data-v="5">&#9733;</span>
           </div>
         </div>
         <textarea class="temo-input" id="temoMsg" rows="4" placeholder="Partage ton expérience avec la formation EDUFEMME D'AFRIQ..."></textarea>
-        <button class="temo-submit" onclick="submitTemoignage()">📩 Envoyer mon Témoignage via WhatsApp</button>
+        <button class="temo-submit" onclick="submitTemoignage()"><svg width="16" height="16" aria-hidden="true"><use href="#ico-wa"/></svg> Envoyer mon Témoignage via WhatsApp</button>
       </div>
     </div>
 
     <div style="text-align:center;margin-top:32px" class="reveal">
-      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-lg btn-pulse-g" style="text-decoration:none">🎓 Je veux ces Résultats — S'inscrire</a>
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-lg btn-pulse-g" style="text-decoration:none"><svg width="18" height="18" aria-hidden="true"><use href="#ico-zap"/></svg> Je veux ces Résultats — S'inscrire</a>
     </div>
   </div>
 </section>
@@ -947,7 +1230,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
       <button class="auth-tab" onclick="switchTab('login')">Se connecter</button>
     </div>
     <div class="auth-form active reveal" id="signupForm">
-      <h3> Rejoindre la Formation</h3>
+      <h3><svg width="20" height="20" aria-hidden="true"><use href="#ico-zap"/></svg> Rejoindre la Formation</h3>
       <p>Crée ton compte gratuit, puis procède au paiement pour accéder aux cours LIVE.</p>
       <div class="auth-input-group">
         <label class="auth-label">Prénom & Nom</label>
@@ -964,10 +1247,10 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
       <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="auth-btn" style="display:block;text-align:center;text-decoration:none;margin-top:16px">
          Créer mon compte & Payer (4 960 FCFA)
       </a>
-      <div style="text-align:center;margin-top:12px;font-size:12px;color:var(--text-muted)">🔒 Données sécurisées · Paiement crypté</div>
+      <div style="text-align:center;margin-top:12px;font-size:12px;color:var(--text-muted)"><svg width="12" height="12" aria-hidden="true"><use href="#ico-lock"/></svg> Données sécurisées · Paiement crypté</div>
     </div>
     <div class="auth-form" id="loginForm">
-      <h3>🔑 Se Connecter</h3>
+      <h3><svg width="20" height="20" aria-hidden="true"><use href="#ico-key"/></svg> Se Connecter</h3>
       <p>Déjà inscrite ? Accède à ton espace cours.</p>
       <div class="auth-input-group">
         <label class="auth-label">Adresse Email</label>
@@ -977,7 +1260,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
         <label class="auth-label">Mot de passe</label>
         <input class="auth-input" type="password" placeholder="Ton mot de passe">
       </div>
-      <button class="auth-btn">🔓 Se Connecter</button>
+      <button class="auth-btn"><svg width="16" height="16" aria-hidden="true"><use href="#ico-key"/></svg> Se Connecter</button>
     </div>
   </div>
 </section>
@@ -990,23 +1273,19 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
     <p>Plus de 1 000 femmes africaines ont déjà transformé leur téléphone en outil de liberté financière. C'est ton tour maintenant. Pour seulement 4 960 FCFA.</p>
     <div class="final-cta-btns">
       <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none">
-        ✅ S'inscrire maintenant — 4 960 FCFA
+        S'inscrire maintenant — 4 960 FCFA
       </a>
       <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" class="btn btn-o btn-lg" style="text-decoration:none;opacity:0.9">
-        🎓 Rejoindre la Formation LIVE
+        Rejoindre la Formation LIVE
       </a>
     </div>
-    <div style="display:flex;align-items:center;justify-content:center;gap:24px;margin-top:24px;flex-wrap:wrap;opacity:.7;font-size:13px">
-      <span>✅ Accès immédiat</span><span>🎥 LIVE Zoom</span><span>💬 Support WhatsApp</span><span>🔒 Paiement sécurisé</span><span>🏆 Attestation incluse</span>
-    </div>
+    <div class="final-cta-meta"><span><svg width="14" height="14" aria-hidden="true"><use href="#ico-check"/></svg> Accès immédiat</span><span><svg width="14" height="14" aria-hidden="true"><use href="#ico-cam"/></svg> LIVE Zoom</span><span><svg width="14" height="14" aria-hidden="true"><use href="#ico-wa"/></svg> Support WhatsApp</span><span><svg width="14" height="14" aria-hidden="true"><use href="#ico-lock"/></svg> Paiement sécurisé</span><span><svg width="14" height="14" aria-hidden="true"><use href="#ico-award"/></svg> Attestation incluse</span></div>
   </div>
 </section>
 
 <!-- ===== FOOTER CTA STRIP ===== -->
 <div class="footer-cta-strip">
-  <div style="color:white;font-family:var(--font-head);font-size:1.1rem;font-weight:800;margin-bottom:12px">
-    💳 Problème de paiement ? Contacte-nous directement
-  </div>
+  <div style="color:white;font-family:var(--font-head);font-size:1.1rem;font-weight:800;margin-bottom:12px;display:flex;align-items:center;justify-content:center;gap:10px"><svg width="20" height="20" aria-hidden="true"><use href="#ico-card"/></svg> Problème de paiement ? Contacte-nous directement</div>
   <a href="https://wa.me/18674670693?text=Bonjour%2C%20j%27ai%20un%20probl%C3%A8me%20de%20paiement%20pour%20la%20formation%20EDUFEMME%20D%27AFRIQ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:white;font-weight:800;font-size:15px;padding:12px 28px;border-radius:8px;text-decoration:none;transition:all .25s">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     Contacter sur WhatsApp
@@ -1022,9 +1301,9 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
       </div>
       <p class="footer-desc">La plateforme de formation numérique dédiée à l'autonomisation économique des femmes africaines. De l'Afrique, pour l'Afrique.</p>
       <div class="footer-socials">
-        <a class="footer-soc" href="https://www.tiktok.com/@edufemmedafriq" target="_blank" rel="noopener" title="TikTok">🎵</a>
-        <a class="footer-soc" href="https://www.facebook.com/share/18M2Tnb4CL/" target="_blank" rel="noopener" title="Facebook">📘</a>
-        <a class="footer-soc" href="https://wa.me/18674670693" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+        <a class="footer-soc" href="https://www.tiktok.com/@edufemmedafriq" target="_blank" rel="noopener" title="TikTok"><svg width="20" height="20" aria-hidden="true"><use href="#ico-tiktok"/></svg> TikTok</a>
+        <a class="footer-soc" href="https://www.facebook.com/share/18M2Tnb4CL/" target="_blank" rel="noopener" title="Facebook"><svg width="20" height="20" aria-hidden="true"><use href="#ico-fb"/></svg> Facebook</a>
+        <a class="footer-soc" href="https://wa.me/18674670693" target="_blank" rel="noopener" title="WhatsApp"><svg width="20" height="20" aria-hidden="true"><use href="#ico-wa"/></svg> WhatsApp</a>
       </div>
     </div>
     <div class="footer-col">
@@ -1037,15 +1316,15 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
-      <a href="https://wa.me/18674670693" target="_blank" rel="noopener">💬 WhatsApp Support</a>
-      <a href="https://www.tiktok.com/@edufemmedafriq" target="_blank" rel="noopener">🎵 @edufemmedafriq</a>
-      <a href="https://www.facebook.com/share/18M2Tnb4CL/" target="_blank" rel="noopener">📘 Facebook</a>
-      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" style="color:var(--orange-light);font-weight:700">💳 Payer maintenant</a>
+      <a href="https://wa.me/18674670693" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#ico-wa"/></svg> WhatsApp Support</a>
+      <a href="https://www.tiktok.com/@edufemmedafriq" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#ico-tiktok"/></svg> @edufemmedafriq</a>
+      <a href="https://www.facebook.com/share/18M2Tnb4CL/" target="_blank" rel="noopener"><svg width="14" height="14" aria-hidden="true"><use href="#ico-fb"/></svg> Facebook</a>
+      <a href="https://my.moneyfusion.net/69daf2ab8a6339cd5e032b9d" target="_blank" rel="noopener" style="color:var(--orange-light);font-weight:700"><svg width="14" height="14" aria-hidden="true"><use href="#ico-card"/></svg> Payer maintenant</a>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2025–2026 EDUFEMME D'AFRIQ — Tous droits réservés.</span>
-    <span>Fait avec ❤️ pour les femmes africaines 🌍</span>
+    <span>Fait avec soin pour les femmes africaines</span>
   </div>
 </footer>
 
@@ -1121,7 +1400,7 @@ function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')
     const inscrits = totalPlaces - places;
     const progressText = document.querySelector('.places-progress-text');
     if(progressText){
-      progressText.children[0].textContent = '🟢 '+inscrits+' inscrites';
+      progressText.children[0].textContent = inscrits+' inscrites';
       progressText.children[1].textContent = places+' places restantes';
     }
   }
@@ -1131,7 +1410,7 @@ function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')
     if(places > 200){
       places -= 1;
       updateDisplay();
-      showToast(' Une nouvelle participante vient de s\'inscrire !');
+      showToast('Une nouvelle participante vient de s\'inscrire !');
     }
     const delay = (20 + Math.random()*40)*1000;
     setTimeout(takePlaceRandomly, delay);
@@ -1143,27 +1422,27 @@ function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')
 
 /* ===== LIVE NOTIFICATIONS ===== */
 const notifData = [
-  {emoji:'👩🏾', name:'Amina K.', loc:'Abidjan', msg:'vient de rejoindre la formation'},
-  {emoji:'👩🏿', name:'Blessing O.', loc:'Lagos', msg:'vient de s\'inscrire'},
-  {emoji:'👩🏾', name:'Fatou D.', loc:'Dakar', msg:'a effectué son paiement'},
-  {emoji:'👩🏽', name:'Cécile M.', loc:'Douala', msg:'vient de s\'inscrire'},
-  {emoji:'👩🏾', name:'Aicha T.', loc:'Lomé', msg:'vient de rejoindre la formation'},
-  {emoji:'👩🏿', name:'Grâce N.', loc:'Kinshasa', msg:'a réservé sa place'},
-  {emoji:'👩🏾', name:'Sandrine B.', loc:'Cotonou', msg:'vient de s\'inscrire'},
-  {emoji:'👩🏽', name:'Rose A.', loc:'Libreville', msg:'a effectué son paiement'},
-  {emoji:'👩🏽', name:'Adeline Nz.', loc:'Yaounde', msg:'a effectué son paiement'},
-  {emoji:'👩🏽', name:'Magui P.', loc:'Bafoussam', msg:'a effectué son paiement'},
-  {emoji:'👩🏽', name:'Brigite S.', loc:'Abidjan', msg:'a effectué son paiement'},
-  {emoji:'👩🏾', name:'Mirabelle A.', loc:'paris', msg:'vient de s\'inscrire'},
-  {emoji:'👩🏾', name:'Rim B.', loc:'bangi', msg:'vient de s\'inscrire'},
-  {emoji:'👩🏾', name:'Michelle de Longrich.', loc:'Djibouti', msg:'vient de s\'inscrire'},
-  {emoji:'👩🏾', name:'Murielle B.', loc:'Brazaville', msg:'vient de s\'inscrire'},
-  {emoji:'👩🏾', name:'Ariana B.', loc:'Kinshassa', msg:'vient de s\'inscrire'},
-  {emoji:'👩🏾', name:'Anriette M.', loc:'Acra', msg:'vient de rejoindre la formation'},
-  {emoji:'👩🏾', name:'Mireille Y.', loc:'Bangui', msg:'vient de rejoindre la formation'},
-  {emoji:'👩🏾', name:'Nadine Tch.', loc:'Bafoussam', msg:'vient de rejoindre la formation'},
-  {emoji:'👩🏾', name:'Noura T.', loc:'Beleko', msg:'vient de rejoindre la formation'},
-  {emoji:'👩🏾', name:'Nadia So.', loc:'Garoua', msg:'vient de rejoindre la formation'},
+  {emoji:'', name:'Amina K.', loc:'Abidjan', msg:'vient de rejoindre la formation'},
+  {emoji:'', name:'Blessing O.', loc:'Lagos', msg:'vient de s\'inscrire'},
+  {emoji:'', name:'Fatou D.', loc:'Dakar', msg:'a effectué son paiement'},
+  {emoji:'', name:'Cécile M.', loc:'Douala', msg:'vient de s\'inscrire'},
+  {emoji:'', name:'Aicha T.', loc:'Lomé', msg:'vient de rejoindre la formation'},
+  {emoji:'', name:'Grâce N.', loc:'Kinshasa', msg:'a réservé sa place'},
+  {emoji:'', name:'Sandrine B.', loc:'Cotonou', msg:'vient de s\'inscrire'},
+  {emoji:'', name:'Rose A.', loc:'Libreville', msg:'a effectué son paiement'},
+  {emoji:'', name:'Adeline Nz.', loc:'Yaounde', msg:'a effectué son paiement'},
+  {emoji:'', name:'Magui P.', loc:'Bafoussam', msg:'a effectué son paiement'},
+  {emoji:'', name:'Brigite S.', loc:'Abidjan', msg:'a effectué son paiement'},
+  {emoji:'', name:'Mirabelle A.', loc:'paris', msg:'vient de s\'inscrire'},
+  {emoji:'', name:'Rim B.', loc:'bangi', msg:'vient de s\'inscrire'},
+  {emoji:'', name:'Michelle de Longrich.', loc:'Djibouti', msg:'vient de s\'inscrire'},
+  {emoji:'', name:'Murielle B.', loc:'Brazaville', msg:'vient de s\'inscrire'},
+  {emoji:'', name:'Ariana B.', loc:'Kinshassa', msg:'vient de s\'inscrire'},
+  {emoji:'', name:'Anriette M.', loc:'Acra', msg:'vient de rejoindre la formation'},
+  {emoji:'', name:'Mireille Y.', loc:'Bangui', msg:'vient de rejoindre la formation'},
+  {emoji:'', name:'Nadine Tch.', loc:'Bafoussam', msg:'vient de rejoindre la formation'},
+  {emoji:'', name:'Noura T.', loc:'Beleko', msg:'vient de rejoindre la formation'},
+  {emoji:'', name:'Nadia So.', loc:'Garoua', msg:'vient de rejoindre la formation'},
 ];
 let notifIndex = 0;
 
@@ -1172,11 +1451,12 @@ function showLiveNotif(){
   notifIndex++;
   const el = document.createElement('div');
   el.className = 'live-notif';
+  const initials = d.name.split(" ").map(n=>n[0]).join("").slice(0,2).toUpperCase();
   el.innerHTML = `
-    <div class="live-notif-avatar">${d.emoji}</div>
+    <div class="live-notif-avatar">${initials}</div>
     <div class="live-notif-text">
       <strong>${d.name}</strong> de ${d.loc}<br>
-      <span>${d.msg} 🎉</span>
+      <span>${d.msg}</span>
     </div>
     <div class="live-notif-dot"></div>
   `;
@@ -1254,11 +1534,11 @@ document.querySelectorAll('#starsInput span').forEach((star,i)=>{
 function submitTemoignage(){
   const nom = document.getElementById('temoNom').value.trim();
   const msg = document.getElementById('temoMsg').value.trim();
-  if(!nom||!msg){showToast('⚠️ Merci de remplir tous les champs');return;}
-  const stars = '⭐'.repeat(selectedStars);
+  if(!nom||!msg){showToast('Merci de remplir tous les champs');return;}
+  const stars = '\u2605'.repeat(selectedStars);
   const text = `Témoignage EDUFEMME D'AFRIQ\n${stars}\n${nom} dit :\n"${msg}"`;
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,'_blank');
-  showToast('✅ Merci pour ton témoignage !');
+  showToast('Merci pour ton témoignage !');
   document.getElementById('temoNom').value='';
   document.getElementById('temoMsg').value='';
 }
