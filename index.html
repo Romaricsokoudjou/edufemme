@@ -398,7 +398,21 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:clamp(32px,6vw,
 .modal-note strong{color:var(--text)}
 .spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,.4);border-top-color:var(--white);border-radius:50%;animation:spin .7s linear infinite;display:none}
 
-
+/* ===== POPUP AUTO ===== */
+.popup-overlay{position:fixed;inset:0;z-index:1050;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:all .4s}
+.popup-overlay.open{opacity:1;visibility:visible}
+.popup{background:var(--white);border-radius:24px;max-width:500px;width:100%;padding:40px 36px;position:relative;transform:translateY(20px) scale(.95);transition:transform .4s var(--ease);overflow:hidden;text-align:center}
+.popup-overlay.open .popup{transform:none}
+.popup::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--orange),var(--green))}
+.popup-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--white);color:var(--text-muted);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;line-height:1}
+.popup-icon{font-size:64px;margin-bottom:16px;display:block}
+.popup-title{font-family:var(--font-head);font-size:1.6rem;font-weight:900;color:var(--text);margin-bottom:8px}
+.popup-sub{font-size:14px;color:var(--text-muted);line-height:1.6;margin-bottom:20px}
+.popup-price{margin-bottom:20px}
+.popup-price-old{font-size:1.1rem;color:var(--text-muted);text-decoration:line-through}
+.popup-price-new{font-family:var(--font-head);font-size:2.8rem;font-weight:900;color:var(--orange)}
+.popup-price-new small{font-size:1.4rem}
+.popup-urgency{background:var(--orange-dim);border:1px solid rgba(230,81,0,.2);border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700;color:var(--orange);margin-bottom:20px;display:inline-block}
 
 /* ===== TOAST ===== */
 .toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--white);padding:14px 24px;border-radius:10px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,.25);opacity:0;transition:all .35s var(--ease);z-index:1100;white-space:nowrap;pointer-events:none}
