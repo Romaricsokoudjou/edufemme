@@ -547,6 +547,63 @@ nav .nav-cta{display:inline-flex;align-items:center;gap:8px}
 /* Prestige separator */
 .prestige-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--orange),transparent);margin:0;opacity:.3}
 
+/* ===== ALIBABA RECORDED TRAINING CARD ===== */
+.alibaba-section{padding:clamp(60px,10vw,100px) clamp(16px,5vw,80px);background:linear-gradient(135deg,#fff8f0 0%,#fff3e0 50%,#fbe9e7 100%);position:relative;overflow:hidden}
+.alibaba-section::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(230,81,0,0.05) 1px,transparent 1px);background-size:36px 36px;pointer-events:none}
+.alibaba-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1}
+.alibaba-head{text-align:center;margin-bottom:clamp(36px,5vw,56px)}
+.alibaba-head .label{color:var(--orange)}
+.alibaba-head h2{font-family:var(--font-head);font-size:clamp(1.7rem,4vw,2.8rem);font-weight:900;color:var(--text);line-height:1.15;margin:12px 0 16px}
+.alibaba-head h2 em{color:var(--orange);font-style:italic}
+.alibaba-head h2 strong{color:var(--blue)}
+.alibaba-head p{font-size:1rem;color:var(--text-muted);max-width:560px;margin:0 auto;line-height:1.8}
+
+.alibaba-card{background:var(--white);border-radius:24px;box-shadow:0 20px 64px rgba(230,81,0,0.18),0 4px 24px rgba(0,0,0,0.06);border:2px solid rgba(230,81,0,0.2);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:0;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.alibaba-card:hover{transform:translateY(-6px);box-shadow:0 28px 80px rgba(230,81,0,0.25),0 8px 32px rgba(0,0,0,0.08)}
+.alibaba-card-visual{background:linear-gradient(135deg,#E65100 0%,#FF5722 40%,#FF7043 70%,#FF8A50 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 36px;position:relative;overflow:hidden;min-height:400px}
+.alibaba-card-visual::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 70%,rgba(255,255,255,0.15) 0%,transparent 60%)}
+.alibaba-card-visual::after{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:rgba(255,255,255,0.08);border-radius:50%}
+.alibaba-visual-badge{position:relative;z-index:2;background:rgba(0,0,0,0.25);border:2px solid rgba(255,255,255,0.4);border-radius:16px;padding:16px 24px;margin-bottom:20px;text-align:center}
+.alibaba-visual-icon{font-size:56px;display:block;margin-bottom:8px;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))}
+.alibaba-visual-title{font-family:var(--font-head);font-size:1.3rem;font-weight:900;color:var(--white);line-height:1.2;text-align:center;position:relative;z-index:2}
+.alibaba-visual-sub{font-size:.85rem;color:rgba(255,255,255,.75);margin-top:6px;text-align:center;position:relative;z-index:2;line-height:1.5}
+.alibaba-rec-badge{position:relative;z-index:2;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);border:1.5px solid rgba(255,255,255,0.4);border-radius:40px;padding:8px 18px;margin-top:16px;font-size:12px;font-weight:700;color:var(--white);letter-spacing:.1em;text-transform:uppercase}
+.alibaba-rec-dot{width:8px;height:8px;background:#FF1744;border-radius:50%;flex-shrink:0;animation:blink 1s ease infinite}
+
+.alibaba-card-content{padding:40px 44px;display:flex;flex-direction:column;justify-content:center}
+.alibaba-card-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--orange-dim);border:1px solid rgba(230,81,0,0.2);border-radius:40px;padding:6px 16px;margin-bottom:20px;width:fit-content}
+.alibaba-card-eyebrow span{font-size:11px;font-weight:700;color:var(--orange);letter-spacing:.2em;text-transform:uppercase}
+.alibaba-card-title{font-family:var(--font-head);font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:900;color:var(--text);line-height:1.2;margin-bottom:12px}
+.alibaba-card-title em{color:var(--orange);font-style:italic}
+.alibaba-card-desc{font-size:.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:24px}
+
+.alibaba-features{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.alibaba-feature{display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--text);font-weight:500}
+.alibaba-feature-ico{width:28px;height:28px;border-radius:8px;background:var(--orange-dim);border:1px solid rgba(230,81,0,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px}
+
+.alibaba-price-box{background:linear-gradient(135deg,var(--orange-dim),#fff3e0);border:2px solid rgba(230,81,0,0.25);border-radius:14px;padding:18px 22px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.alibaba-price-left .old-price{font-size:13px;color:var(--text-muted);text-decoration:line-through;font-weight:600;display:block}
+.alibaba-price-left .new-price{font-family:var(--font-head);font-size:2rem;font-weight:900;color:var(--orange);line-height:1}
+.alibaba-price-left .new-price span{font-size:1rem;font-weight:700}
+.alibaba-price-badge{background:var(--orange);color:var(--white);font-size:11px;font-weight:800;padding:6px 14px;border-radius:20px;text-align:center;white-space:nowrap}
+
+.alibaba-cta-btn{display:block;text-align:center;text-decoration:none;background:linear-gradient(135deg,var(--orange),#FF5722);color:var(--white);font-family:var(--font-body);font-weight:800;font-size:16px;padding:18px 32px;border-radius:12px;box-shadow:var(--shadow-orange);transition:all .3s var(--ease);animation:pulse 2.5s ease infinite;letter-spacing:.02em;border:none;cursor:pointer;width:100%}
+.alibaba-cta-btn:hover{background:linear-gradient(135deg,#FF7043,var(--orange));transform:translateY(-3px);box-shadow:0 20px 60px rgba(230,81,0,0.45)}
+.alibaba-cta-meta{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:12px;flex-wrap:wrap;font-size:12px;color:var(--text-muted)}
+
+@media(max-width:768px){
+  .alibaba-card{grid-template-columns:1fr}
+  .alibaba-card-visual{min-height:280px;padding:36px 24px}
+  .alibaba-card-content{padding:28px 24px}
+}
+
+/* ===== PROGRAMME SLOT ALIBABA ===== */
+.prog-slot{background:linear-gradient(135deg,#f8f9ff 0%,#eef2ff 100%);border:2px dashed rgba(13,71,161,0.25);border-radius:16px;padding:24px 28px;margin-top:28px;text-align:center;position:relative}
+.prog-slot-badge{display:inline-flex;align-items:center;gap:8px;background:var(--blue-dim);border:1px solid rgba(13,71,161,0.2);border-radius:40px;padding:6px 16px;margin-bottom:12px;font-size:11px;font-weight:700;color:var(--blue);letter-spacing:.15em;text-transform:uppercase}
+.prog-slot-title{font-family:var(--font-head);font-size:1.15rem;font-weight:800;color:var(--text);margin-bottom:6px}
+.prog-slot-desc{font-size:.9rem;color:var(--text-muted);line-height:1.6;max-width:480px;margin:0 auto}
+.prog-slot-tag{display:inline-block;margin-top:12px;background:linear-gradient(135deg,var(--orange),#FF5722);color:var(--white);font-size:12px;font-weight:700;padding:6px 18px;border-radius:20px}
+
 /* Zoom logo — text badge refined */
 .zoom-logo{background:rgba(255,255,255,0.15);border-radius:8px;padding:6px 14px;font-size:13px;font-weight:800;color:var(--white);display:inline-flex;align-items:center;gap:6px}
 .zoom-logo svg{width:16px;height:16px;fill:rgba(255,255,255,0.85)}
@@ -831,6 +888,7 @@ nav .nav-cta{display:inline-flex;align-items:center;gap:8px}
   </div>
   <div class="nav-links">
     <a class="nav-link" href="#programme">Programme</a>
+    <a class="nav-link" href="#alibaba">Alibaba</a>
     <a class="nav-link" href="#formateurs">Formateurs</a>
     <a class="nav-link" href="#horaires">Horaires</a>
     <a class="nav-link" href="#offre">L'Offre</a>
@@ -845,6 +903,7 @@ nav .nav-cta{display:inline-flex;align-items:center;gap:8px}
 
 <div class="mob-menu" id="mobMenu">
   <a href="#programme" onclick="toggleMob()">Programme</a>
+  <a href="#alibaba" onclick="toggleMob()">Formation Alibaba</a>
   <a href="#formateurs" onclick="toggleMob()">Formateurs</a>
   <a href="#horaires" onclick="toggleMob()">Horaires</a>
   <a href="#offre" onclick="toggleMob()">L'Offre</a>
@@ -1078,10 +1137,143 @@ nav .nav-cta{display:inline-flex;align-items:center;gap:8px}
         </div>
       </div>
     </div>
+    <!-- ===== BONUS SLOT : FORMATION ALIBABA ENREGISTRÉE ===== -->
+    <div class="prog-slot reveal d3" style="margin-top:36px">
+      <div class="prog-slot-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        Bonus — Formation Complémentaire
+      </div>
+      <div class="prog-slot-title" style="display:flex;align-items:center;justify-content:center;gap:10px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="var(--blue)" stroke="none"/></svg>
+        Formation Complète Alibaba — Accès Enregistré
+      </div>
+      <div class="prog-slot-desc">En complément de ta formation LIVE, accède à une formation 100% enregistrée sur Alibaba. Regarde à ton rythme, depuis ton téléphone ou ton ordinateur, à n'importe quelle heure.</div>
+      <div class="prog-slot-tag" style="display:inline-flex;align-items:center;gap:8px">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        Module Alibaba · Accès illimité · Enregistré
+      </div>
+    </div>
+
     <div class="section-cta reveal d3">
       <div class="section-cta-box">
         <a href="https://edufemmedafriq.mymaketou.store/products/edufemmedafriq/checkout" target="_blank" rel="noopener" class="btn btn-g btn-xl btn-pulse-g" style="text-decoration:none"><svg width="18" height="18" aria-hidden="true"><use href="#ico-zap"/></svg> Rejoindre la Formation — 4 500 FCFA</a>
         <p><span><svg width="13" height="13" aria-hidden="true"><use href="#ico-check"/></svg> Accès immédiat</span><span><svg width="13" height="13" aria-hidden="true"><use href="#ico-cam"/></svg> LIVE Zoom</span><span><svg width="13" height="13" aria-hidden="true"><use href="#ico-wa"/></svg> Support WhatsApp</span><span><svg width="13" height="13" aria-hidden="true"><use href="#ico-award"/></svg> Attestation incluse</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ALIBABA RECORDED TRAINING ===== -->
+<section class="alibaba-section" id="alibaba">
+  <div class="alibaba-inner">
+    <div class="alibaba-head">
+      <span class="label lo">Formation Bonus Exclusive</span>
+      <h2>Formation Complète <em>Alibaba</em><br>100% <strong>Enregistrée</strong></h2>
+      <div class="divider-line div-o" style="margin-bottom:16px"></div>
+      <p>En complément de ta formation LIVE, accède à un programme complet et enregistré sur Alibaba. Visionne depuis ton téléphone ou ton ordinateur, quand tu veux, autant de fois que tu veux.</p>
+    </div>
+
+    <div class="alibaba-card reveal">
+      <!-- Visual left -->
+      <div class="alibaba-card-visual">
+        <div class="alibaba-visual-badge">
+          <span class="alibaba-visual-icon" style="font-size:0;display:flex;align-items:center;justify-content:center;margin-bottom:8px">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </span>
+          <div class="alibaba-visual-title">Alibaba<br>Maîtrise Totale</div>
+          <div class="alibaba-visual-sub">Importation Chine → Afrique</div>
+        </div>
+        <div class="alibaba-rec-badge">
+          <div class="alibaba-rec-dot"></div>
+          ENREGISTRÉ · ACCÈS ILLIMITÉ
+        </div>
+        <div style="display:flex;gap:12px;margin-top:20px;position:relative;z-index:2;flex-wrap:wrap;justify-content:center">
+          <div style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:10px;padding:10px 16px;text-align:center;font-size:11px;font-weight:700;color:white">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto 4px"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2" stroke-linecap="round"/></svg>
+            Téléphone<br><span style="font-size:10px;opacity:.8">Compatible</span>
+          </div>
+          <div style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:10px;padding:10px 16px;text-align:center;font-size:11px;font-weight:700;color:white">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto 4px"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Ordinateur<br><span style="font-size:10px;opacity:.8">Compatible</span>
+          </div>
+          <div style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:10px;padding:10px 16px;text-align:center;font-size:11px;font-weight:700;color:white">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;margin:0 auto 4px"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M12 6v6l4 2"/></svg>
+            Accès<br><span style="font-size:10px;opacity:.8">Illimité</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content right -->
+      <div class="alibaba-card-content">
+        <div class="alibaba-card-eyebrow">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
+          <span>Formation Enregistrée · Regarder à ton rythme</span>
+        </div>
+        <div class="alibaba-card-title">Maîtrise <em>Alibaba</em> de A à Z<br>pour l'Importation en Afrique</div>
+        <p class="alibaba-card-desc">Une formation complète et enregistrée, conçue pour les femmes africaines qui veulent importer des produits depuis la Chine via Alibaba. Pas besoin d'être disponible à une heure précise — tu regardes quand tu veux, depuis ton téléphone ou ordinateur.</p>
+
+        <div class="alibaba-features">
+          <div class="alibaba-feature">
+            <div class="alibaba-feature-ico">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <span>Trouver les meilleurs fournisseurs sur Alibaba en toute sécurité</span>
+          </div>
+          <div class="alibaba-feature">
+            <div class="alibaba-feature-ico">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <span>Négocier les prix, les MOQ et les conditions de livraison</span>
+          </div>
+          <div class="alibaba-feature">
+            <div class="alibaba-feature-ico">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span>Éviter les arnaques et vérifier la fiabilité des fournisseurs</span>
+          </div>
+          <div class="alibaba-feature">
+            <div class="alibaba-feature-ico">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3H3v14h18V3z"/><path d="M8 21h8M12 17v4"/><path d="M7 7h4M7 11h2"/><rect x="13" y="7" width="5" height="5" rx="1"/></svg>
+            </div>
+            <span>Gérer l'expédition, les douanes et la livraison jusqu'en Afrique</span>
+          </div>
+          <div class="alibaba-feature">
+            <div class="alibaba-feature-ico">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <span>Calculer tes marges et rentabiliser tes premières commandes</span>
+          </div>
+          <div class="alibaba-feature">
+            <div class="alibaba-feature-ico">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg>
+            </div>
+            <span>Compatible mobile &amp; ordinateur — visionne partout, à tout moment</span>
+          </div>
+        </div>
+
+        <div class="alibaba-price-box">
+          <div class="alibaba-price-left">
+            <span class="old-price">45 000 FCFA (81 USD)</span>
+            <div class="new-price">12 500 <span>FCFA</span></div>
+            <div style="font-size:12px;color:var(--text-muted);margin-top:2px">soit environ 22 USD · Accès illimité</div>
+          </div>
+          <div class="alibaba-price-badge">−72%<br>PROMO<br>LIMITÉE</div>
+        </div>
+
+        <a href="LIEN_PAIEMENT_ALIBABA_ICI" target="_blank" rel="noopener" class="alibaba-cta-btn" style="display:inline-flex;align-items:center;justify-content:center;gap:10px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          Rejoindre la Formation Alibaba — 12 500 FCFA
+        </a>
+        <div class="alibaba-cta-meta">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4" stroke-linecap="round"/></svg> Paiement sécurisé</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg> Mobile &amp; PC</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Accès à vie</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg> Formation complète</span>
+        </div>
       </div>
     </div>
   </div>
@@ -1103,49 +1295,49 @@ nav .nav-cta{display:inline-flex;align-items:center;gap:8px}
     </div>
     <div class="horaires-grid">
       <div class="horaire-card reveal">
-        <div class="horaire-flag">🇨🇲</div>
+        <div class="horaire-flag"><svg width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="rgba(230,81,0,0.15)"/><text x="18" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="900" font-size="11" fill="#E65100">CMR</text></svg></div>
         <div class="horaire-pays">Cameroun</div>
         <div class="horaire-heure">20h – 22h</div>
         <div class="horaire-zoom">Heure locale</div>
       </div>
       <div class="horaire-card reveal d1">
-        <div class="horaire-flag">🇨🇮</div>
+        <div class="horaire-flag"><svg width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="rgba(230,81,0,0.15)"/><text x="18" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="900" font-size="11" fill="#E65100">CIV</text></svg></div>
         <div class="horaire-pays">Côte d'Ivoire</div>
         <div class="horaire-heure">19h – 21h</div>
         <div class="horaire-zoom">Heure locale</div>
       </div>
       <div class="horaire-card reveal d2">
-        <div class="horaire-flag">🇸🇳</div>
+        <div class="horaire-flag"><svg width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="rgba(230,81,0,0.15)"/><text x="18" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="900" font-size="11" fill="#E65100">SEN</text></svg></div>
         <div class="horaire-pays">Sénégal</div>
         <div class="horaire-heure">19h – 21h</div>
         <div class="horaire-zoom">Heure locale</div>
       </div>
       <div class="horaire-card reveal d3">
-        <div class="horaire-flag">🇧🇯</div>
+        <div class="horaire-flag"><svg width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="rgba(230,81,0,0.15)"/><text x="18" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="900" font-size="11" fill="#E65100">BEN</text></svg></div>
         <div class="horaire-pays">Bénin</div>
         <div class="horaire-heure">20h – 22h</div>
         <div class="horaire-zoom">Heure locale</div>
       </div>
       <div class="horaire-card reveal">
-        <div class="horaire-flag">🇹🇬</div>
+        <div class="horaire-flag"><svg width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="rgba(230,81,0,0.15)"/><text x="18" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="900" font-size="11" fill="#E65100">TGO</text></svg></div>
         <div class="horaire-pays">Togo</div>
         <div class="horaire-heure">20h – 22h</div>
         <div class="horaire-zoom">Heure locale</div>
       </div>
       <div class="horaire-card reveal d1">
-        <div class="horaire-flag">🇬🇦</div>
+        <div class="horaire-flag"><svg width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="rgba(230,81,0,0.15)"/><text x="18" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="900" font-size="11" fill="#E65100">GAB</text></svg></div>
         <div class="horaire-pays">Gabon</div>
         <div class="horaire-heure">20h – 22h</div>
         <div class="horaire-zoom">Heure locale</div>
       </div>
       <div class="horaire-card reveal d2">
-        <div class="horaire-flag">🇨🇩</div>
+        <div class="horaire-flag"><svg width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="rgba(230,81,0,0.15)"/><text x="18" y="23" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="900" font-size="11" fill="#E65100">RDC</text></svg></div>
         <div class="horaire-pays">RDC</div>
         <div class="horaire-heure">21h – 23h</div>
         <div class="horaire-zoom">Heure locale (Kinshasa)</div>
       </div>
       <div class="horaire-card reveal d3" style="background:rgba(255,255,255,0.12);border-color:var(--orange-light)">
-        <div class="horaire-flag"></div>
+        <div class="horaire-flag"><svg width="36" height="36" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="rgba(230,81,0,0.2)"/><circle cx="18" cy="15" r="5" fill="none" stroke="#E65100" stroke-width="2"/><path d="M11 27c0-3.866 3.134-7 7-7s7 3.134 7 7" fill="none" stroke="#E65100" stroke-width="2" stroke-linecap="round"/></svg></div>
         <div class="horaire-pays">Autre pays ?</div>
         <div class="horaire-heure" style="font-size:1rem">Contacte-nous</div>
         <div class="horaire-zoom">WhatsApp disponible</div>
@@ -1435,6 +1627,7 @@ nav .nav-cta{display:inline-flex;align-items:center;gap:8px}
     <div class="footer-col">
       <h4>Formation</h4>
       <a href="#programme">Le programme</a>
+      <a href="#alibaba">Formation Alibaba</a>
       <a href="#horaires">Horaires LIVE</a>
       <a href="#offre">L'offre</a>
       <a href="#temoignages">Témoignages</a>
